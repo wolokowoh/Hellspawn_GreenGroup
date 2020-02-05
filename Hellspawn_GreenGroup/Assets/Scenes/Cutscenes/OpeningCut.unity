@@ -356,12 +356,16 @@ MonoBehaviour:
   canvasManager: {fileID: 369911567}
   messagesToDisplay:
   - message:
-    - Abraxas:This is the first line
-    - 'Abraxas: second'
+    - '...'
   - message:
-    - Warden:This is the first line
-    - 'Warden: Second'
-  indexOfCharacterChange: 01000000
+    - Hello, I am Abraxas, the main character of this story
+    - The team is putting in a lot of work to tell my story.
+    - 'To free my father from his captor, the Warden, I must gain new abilities by
+      fighting '
+    - and platforming through zones. This will allow me to grow stronger and find
+      a way
+    - around the prison defenses
+  indexOfCharacterChange: 
 --- !u!1 &1133150371
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.10174531, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.10174531, b: 0, a: 0.53333336}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1001,7 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.95086265, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.95086265, b: 1, a: 0.60784316}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
