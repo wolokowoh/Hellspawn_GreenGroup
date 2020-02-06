@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityMod;
         playerAudio = GetComponent<AudioSource>();
-        health = 50;
+        health = GetComponent<TestGameManager>().hp;
     }
 
     void Update()
@@ -123,6 +123,16 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(attackDelay);
         isAttacking = false;
         yield return null;
+    }
+
+    public void TakeDamage (int amount)
+    {
+        health -= amount;
+
+        if (health <= 0)
+        {
+            playerAnim.SetTrigger("Death");
+        }
     }
 }
 
