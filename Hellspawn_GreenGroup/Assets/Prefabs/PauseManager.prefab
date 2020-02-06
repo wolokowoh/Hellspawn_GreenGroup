@@ -46,3 +46,15 @@ MonoBehaviour:
   pauseText: {fileID: 0}
   pauseImage: {fileID: 0}
   quitText: {fileID: 0}
+  tipMessage: {fileID: 0}
+  tipMessagesArray:
+  - Enemies have different resistances to each weapon.
+  - Your damage resistance is changed by which weapon you have equipped.
+  - Using a magic refill potion will restore your current weapon's energy.
+  - Some items require you to have a certain weapon to obtain.
+  - You can complete the levels in any order.
+  - God laughs at your failures so GIT GUD
+  - Dying is a painful. Don't die and you'll avoid some pain.
+  - The rose is your health.
+  - Use the num keys 1-4 to change weapons.
+  - If you suck at this game, that's your problem. Don't take it out on others.

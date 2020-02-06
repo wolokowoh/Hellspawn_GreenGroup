@@ -54,3 +54,4 @@ MonoBehaviour:
   UIGameOverTrigger: 0
   levelName: SomeLevelName
   pickupName: SomePickup
+  PlayerResistance: {fileID: 0}

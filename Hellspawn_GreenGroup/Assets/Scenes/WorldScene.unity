@@ -3504,11 +3504,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
         type: 3}
-      propertyPath: tipMessagesArray.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
       propertyPath: pauseText
       value: 
       objectReference: {fileID: 1824300828}
@@ -3527,56 +3522,6 @@ PrefabInstance:
       propertyPath: tipMessage
       value: 
       objectReference: {fileID: 1748076326}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[9]
-      value: If you suck at this game, that's your problem. Don't take it out on others.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[8]
-      value: Use the num keys 1-4 to change weapons.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[7]
-      value: The rose is your health.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[6]
-      value: Dying is a painful. Don't die and you'll avoid some pain.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[5]
-      value: God laughs at your failures so GIT GUD
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[4]
-      value: You can complete the levels in any order.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[3]
-      value: Some items require you to have a certain weapon to obtain.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[2]
-      value: Using a magic refill potion will restore your current weapon's energy.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[1]
-      value: Your damage resistance is changed by which weapon you have equipped.
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: tipMessagesArray.Array.data[0]
-      value: Enemies have different resistances to each weapon.
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a06a2bc34de0bd141bf07865915783a8, type: 3}
 --- !u!1 &866464324
@@ -7030,14 +6975,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 559852127, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7046,13 +6983,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
+    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
+    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -7081,6 +7016,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9205672633964410881, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -7091,12 +7036,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7676,6 +7621,10 @@ PrefabInstance:
     - target: {fileID: 100078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_Name
       value: Skeleton@Skin
+      objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8606,6 +8555,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
+      propertyPath: updateUI
+      value: 
+      objectReference: {fileID: 1824300827}
+    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
+      propertyPath: BloodOrb
+      value: 
+      objectReference: {fileID: 684178816}
+    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
+      propertyPath: PoisonOrb
+      value: 
+      objectReference: {fileID: 978064678}
+    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
       propertyPath: ClawsOrb
       value: 
       objectReference: {fileID: 482846648}
@@ -8614,31 +8578,6 @@ PrefabInstance:
       propertyPath: IceOrb
       value: 
       objectReference: {fileID: 1810075900}
-    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: PoisonOrb
-      value: 
-      objectReference: {fileID: 978064678}
-    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: BloodOrb
-      value: 
-      objectReference: {fileID: 684178816}
-    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: updateUI
-      value: 
-      objectReference: {fileID: 1824300827}
-    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 561760747}
-    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: PlayerResistance
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232807, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: m_LocalPosition.x
