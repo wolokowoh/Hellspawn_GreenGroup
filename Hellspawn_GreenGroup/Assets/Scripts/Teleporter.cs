@@ -19,10 +19,14 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(buildIndexofSceneToLoad);
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                SceneManager.LoadScene(buildIndexofSceneToLoad);
+            }
         }
+        
     }
     private void OnTriggerExit(Collider other)
     {
