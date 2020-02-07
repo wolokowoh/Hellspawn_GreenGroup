@@ -475,7 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numHealthPotions: 0
   numMagicPotions: 0
-  maxPotions: 0
+  maxPotions: 99
 --- !u!1 &145633398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,7 +1693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numHealthPotions: 0
   numMagicPotions: 0
-  maxPotions: 0
+  maxPotions: 99
 --- !u!1 &572144687
 GameObject:
   m_ObjectHideFlags: 0
@@ -7475,7 +7475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numHealthPotions: 0
   numMagicPotions: 0
-  maxPotions: 0
+  maxPotions: 99
 --- !u!1 &1871743416
 GameObject:
   m_ObjectHideFlags: 0
