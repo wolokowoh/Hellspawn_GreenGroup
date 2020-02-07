@@ -59,11 +59,7 @@ public class EnemyController : MonoBehaviour
         {
             Attack();
         }
-        if (playerHealth <= 0)
-        {
-            anim.SetTrigger("PlayerDead");
-        }
-        
+
         if (movingRight)
         {
             transform.Translate(0, 0, 2 * Time.deltaTime * speed);
