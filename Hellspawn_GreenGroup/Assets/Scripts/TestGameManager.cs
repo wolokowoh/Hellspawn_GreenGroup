@@ -18,16 +18,13 @@ public class TestGameManager : MonoBehaviour
     public bool UIGameOverTrigger;
     public string levelName;
 
-    public PlayerResistanceExample PlayerResistance;
+    private PlayerResistanceExample PlayerResistance;
 
-    string msg = "This is the test message. If you are seeing this, \n"
-            + "I guess that this is working as intended.";
-    string msg2 = "Also a test message.";
 
     // Start is called before the first frame update
     void Start()
     {
-
+        PlayerResistance = new PlayerResistanceExample();
         UIGameOverTrigger = false;
         //hp = GameObject.Find("Player").GetComponent<PlayerController>().health;
         // could add max health here
@@ -35,10 +32,6 @@ public class TestGameManager : MonoBehaviour
         
         updateUI.setWeaponToCurrent(ClawsOrb);
 
-        // sets which weapons we allow the player to equip
-        SaveData.Instance.setPlayerHasBloodWeapon(false);
-        SaveData.Instance.setPlayerHasIceWeapon(true);
-        SaveData.Instance.setPlayerHasPoisonWeapon(false);
 
     }
 
@@ -94,21 +87,7 @@ public class TestGameManager : MonoBehaviour
         resistancesStructure.SetBloodResistance(5);
         hp = resistancesStructure.GetBloodResistance();
 
-        if(updateUI.Dialogue.activeInHierarchy && Input.GetKeyDown(KeyCode.T))
-        {
-            if (updateUI.getCurrentDialogueString() == msg)
-            {
-                updateUI.changeDialogTextToNextMessage(msg2);
-            }
-            else // In this case its msg two
-            {
-                updateUI.cutOffDialogue();
-            }
-        }
-        else if(Input.GetKeyDown(KeyCode.T))
-        {
-            updateUI.cutOnDialogueAndSetText(msg);
-        }
+       
 
     }
 

@@ -54,19 +54,26 @@ public class LoadGameFunctions : MonoBehaviour
     {
         // set up a save system or just load the last scene/checkpoint
 
+
         // for now just load SampleScene
         SceneManager.LoadScene("SampleScene");
     }
     public static void NewGamePlus()
     {
         // setup the bools in SavaData
-
+        SaveData.Instance.setPlayerHasBloodWeapon(true);
+        SaveData.Instance.setPlayerHasIceWeapon(true);
+        SaveData.Instance.setPlayerHasPoisonWeapon(true);
         // for now just load SampleScene 
         SceneManager.LoadScene("OpeningCut");
     }
     public static void NewGame()
     {
         // setup the bools in SavaData
+        SaveData.Instance.setPlayerHasBloodWeapon(false);
+        SaveData.Instance.setPlayerHasIceWeapon(false);
+        SaveData.Instance.setPlayerHasPoisonWeapon(false);
+
 
         // load opening scene
 
