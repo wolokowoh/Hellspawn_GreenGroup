@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour
 {
     public GameObject parent;
     private UpdateUI updateUI;
+
     // add wherever potions are stored
     public string potionText;
 
@@ -23,15 +24,21 @@ public class Pickup : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
+                string pickupName = "";
                 // do whatever first
                 if (gameObject.CompareTag("MagicPotion"))
                 {
                     // add the special code here
+
+                    pickupName = "Magic Potion";
                 }
                 else if (gameObject.CompareTag("HealthPotion"))
                 {
                     // add the special code here
+
+                    pickupName = "Health Potion";
                 }
+                updateUI.displayPickupMessage(pickupName + " Obtained");
                 // maybe add else for life if we do that
                 updateUI.CutOffInteractionText();
                 Destroy(parent);

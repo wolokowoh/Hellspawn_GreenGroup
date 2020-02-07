@@ -17,7 +17,6 @@ public class TestGameManager : MonoBehaviour
     public GameObject IceOrb;
     public bool UIGameOverTrigger;
     public string levelName;
-    public string pickupName;
 
     public PlayerResistanceExample PlayerResistance;
 
@@ -33,7 +32,7 @@ public class TestGameManager : MonoBehaviour
         //hp = GameObject.Find("Player").GetComponent<PlayerController>().health;
         // could add max health here
         updateUI.displayLevelName(levelName);
-        updateUI.displayPickupMessage(pickupName + " Obtained");
+        
         updateUI.setWeaponToCurrent(ClawsOrb);
 
         // sets which weapons we allow the player to equip
