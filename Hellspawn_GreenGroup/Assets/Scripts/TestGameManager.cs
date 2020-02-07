@@ -20,6 +20,7 @@ public class TestGameManager : MonoBehaviour
 
     private PlayerResistanceExample PlayerResistance;
 
+    // add something update UI vased on playerinventory
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +58,7 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(ClawsOrb);
         }
         else if ((Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2))
-           && SaveData.Instance.getPlayerHasIceWeapon()
+           && SaveData.Instance.GetPlayerHasIceWeapon()
            )
         {
             // change whatever else you need before updating UI
@@ -65,7 +66,7 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(IceOrb);
         }
         else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3))
-            && SaveData.Instance.getPlayerHasPoisonWeapon()
+            && SaveData.Instance.GetPlayerHasPoisonWeapon()
            )
         {
             // change whatever else you need before updating UI
@@ -73,7 +74,7 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(PoisonOrb);
         }
         else if ((Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Alpha4))
-            && SaveData.Instance.getPlayerHasBloodWeapon()
+            && SaveData.Instance.GetPlayerHasBloodWeapon()
            )
         {
             // change whatever else you need before updating UI
@@ -81,13 +82,11 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(BloodOrb);
         }
 
-
-        // test for structure to make sure enemies and players can use it as a variable
-        ResistancesStructure resistancesStructure = new ResistancesStructure();
-        resistancesStructure.SetBloodResistance(5);
-        hp = resistancesStructure.GetBloodResistance();
-
-       
+        PlayerInventory playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        int hpPotions = playerInventory.numHealthPotions;
+        int mpPotions = playerInventory.numMagicPotions;
+        updateUI.changeHPRefillText(hpPotions);
+        updateUI.changeMPRefillText(mpPotions);
 
     }
 

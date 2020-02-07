@@ -23,6 +23,10 @@ public class Teleporter : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
+                int HPcount = other.gameObject.GetComponent<PlayerInventory>().numHealthPotions;
+                int MPcount = other.gameObject.GetComponent<PlayerInventory>().numMagicPotions;
+                SaveData.Instance.SetHealthPotionCount(HPcount);
+                SaveData.Instance.SetMagicPotionCount(MPcount);
                 SceneManager.LoadScene(buildIndexofSceneToLoad);
             }
         }

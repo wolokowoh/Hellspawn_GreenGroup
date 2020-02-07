@@ -24,24 +24,31 @@ public class Pickup : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
+                bool added = false;
                 string pickupName = "";
                 // do whatever first
                 if (gameObject.CompareTag("MagicPotion"))
                 {
                     // add the special code here
-
+                    added = other.GetComponent<PlayerInventory>().addMagicPotion();
                     pickupName = "Magic Potion";
                 }
                 else if (gameObject.CompareTag("HealthPotion"))
                 {
                     // add the special code here
-
+                    added = other.GetComponent<PlayerInventory>().addHealthPotion();
                     pickupName = "Health Potion";
                 }
-                updateUI.displayPickupMessage(pickupName + " Obtained");
-                // maybe add else for life if we do that
-                updateUI.CutOffInteractionText();
-                Destroy(parent);
+
+
+                if (added)
+                {
+                    updateUI.displayPickupMessage(pickupName + " Obtained");
+                    // maybe add else for life if we do that
+                    updateUI.CutOffInteractionText();
+                    Destroy(parent);
+                }
+                
             }
         }
     }
@@ -53,6 +60,7 @@ public class Pickup : MonoBehaviour
         }
 
     }
+
     // Start is called before the first frame update
     void Start()
     {

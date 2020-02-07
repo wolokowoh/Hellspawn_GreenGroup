@@ -12,6 +12,7 @@ TagManager:
   - MagicPotion
   - HealthPotion
   - Canvas
+  - SaveData
   layers:
   - Default
   - TransparentFX
