@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityMod;
         playerAudio = GetComponent<AudioSource>();
-        //health = GameObject.Find("Player").GetComponent<TestGameManager>().hp;
+        health = TGManager.hp;
     }
 
     void Update()
