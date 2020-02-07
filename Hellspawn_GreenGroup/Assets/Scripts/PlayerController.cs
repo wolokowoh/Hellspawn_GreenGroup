@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
-    public float health;
+    public int health;
     public float jumpForce;
     public float gravityMod;
     private float attackDamage = 5;
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityMod;
         playerAudio = GetComponent<AudioSource>();
-        health = GetComponent<TestGameManager>().hp;
+        //health = GameObject.Find("Player").GetComponent<TestGameManager>().hp;
     }
 
     void Update()
