@@ -25,7 +25,6 @@ public class TestGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerResistance = new PlayerResistanceExample();
         UIGameOverTrigger = false;
         //hp = GameObject.Find("Player").GetComponent<PlayerController>().health;
         // could add max health here

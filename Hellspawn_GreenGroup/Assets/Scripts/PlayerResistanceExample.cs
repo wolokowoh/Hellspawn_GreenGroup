@@ -7,7 +7,7 @@ public class PlayerResistanceExample : MonoBehaviour
     public int weaponEquipped;
     public int resistanceToShowInEditorFoTest;
 
-    ResistancesStructure playerResistancesExample = new ResistancesStructure();
+    public ResistancesStructure playerResistancesExample;
     // Start is called before the first frame update
     void Start()
     {
