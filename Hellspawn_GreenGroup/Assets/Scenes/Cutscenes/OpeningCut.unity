@@ -132,6 +132,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1412799993}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &263472852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012226140144, guid: 11db918338e063f4b86b6024c791e5a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1479214211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &278201809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011578242470, guid: 3c9c8a8bf50e6b5439ab9db67bc82586,
@@ -318,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blinder: {fileID: 393421252358469111}
   textToDisplay: {fileID: 393421251690777582}
-  defaultCharacter: 0
+  defaultCharacter: 1
   AbraxasColor: {r: 0.33132324, g: 1, b: 0.2783019, a: 1}
   OtherPersonColor: {r: 1, g: 0, b: 0, a: 1}
   routineRunning: 0
@@ -337,14 +343,8 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 8ba535c70bbcf7b46b0cba1188faae47,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -5716681864270162303, guid: 8ba535c70bbcf7b46b0cba1188faae47,
-        type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: -5252816984213320552, guid: 8ba535c70bbcf7b46b0cba1188faae47,
-        type: 3}
     - target: {fileID: -4216859302048453862, guid: 8ba535c70bbcf7b46b0cba1188faae47,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -415,6 +415,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: -5716681864270162303, guid: 8ba535c70bbcf7b46b0cba1188faae47,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: -5252816984213320552, guid: 8ba535c70bbcf7b46b0cba1188faae47,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
 --- !u!4 &680386685 stripped
@@ -475,16 +481,86 @@ MonoBehaviour:
   canvasManager: {fileID: 369911567}
   messagesToDisplay:
   - message:
-    - '...'
+    - 'This is the story of Abraxas and his journey to rescue his father from the
+      clutches of '
+    - a foul demon. Will he be able to do so or will he fail? It is help to you to
+      guide him
+    - through the three lower circles of hell...
   - message:
-    - Hello, I am Abraxas, the main character of this story
-    - The team is putting in a lot of work to tell my story.
-    - 'To free my father from his captor, the Warden, I must gain new abilities by
-      fighting '
-    - and platforming through zones. This will allow me to grow stronger and find
-      a way
-    - around the prison defenses
-  indexOfCharacterChange: 
+    - On the coldest of winter nights in my circle of hell, my father never returned
+      home.
+    - This wouldn't be the first time he didn't return from a night on the town, though
+      usually
+    - he'd have the decency to be back before noon. This wasn't by choice though.
+      I'd soon
+    - soon find out something nefarious was going on.
+  - message:
+    - I began looking in the first places I could think of. The first was the circle
+      of lust.
+    - 'The circle of lust was the dwelling place of those souls who commited sexual
+      sins. '
+    - You might be expecting a strip club or a brothel, but you are forgetting something
+      very
+    - important. This is hell. Instead the place is engulfed in an eternal cyclone.
+      Still they
+    - somehow managed to use that pressure to make alcohol.
+  - message:
+    - That's right the circle of lust is now full of drunkards, my father often included
+      in
+    - 'their ranks. '
+  - message:
+    - Needless to say he wasn't there. He wasn't at my psycho mother;s place either.
+    - 'I checked all of his usual haunts. I found nothing. Then I checked the place
+      I least '
+    - expected, his job. My father worked...well work is probably the wrong way to
+      put it.
+    - He was employed at a prison as a guard, though the bum rarely went.
+  - message:
+    - Let me explain. My father and I are low level demons. As members of the lowest
+      rank,
+    - 'in the hierarchy, our only opportunity for advancement was seeking employment. '
+    - Though low in rank, my father was a fairly powerful demon, so he was perfectly
+    - capable of carrying out this duty. What is shocking is that he went to work.
+      He was
+    - a bum through and through.
+  - message:
+    - 'With that said, moving up the ranks has its advantages.You could even redeem
+      your '
+    - way out of hell... eventually.
+  - message:
+    - Anyways, it turns out that he did go to work.
+    - 
+    - Unfortunately, he and the other guards were tricked by a prisoner.
+  - message:
+    - That prisoner now calls himself "The Warden".
+    - 
+    - 'What an arrogant pissbag. I apologize for my rudeness, but I despise that uppity
+      twat. '
+    - 
+  - message:
+    - 'I found out he was keeping my father captive, draining his energy for God knows '
+    - 'what purpose. I''d have to break into a supposedly inescapable prison in order
+      to '
+    - 'save my father. '
+    - 
+    - May the hand of fate guide me.
+  indexOfCharacterChange: 01000000
+  objects:
+  - {fileID: 1200946996}
+  - {fileID: 263472852}
+  - {fileID: 1634681390}
+  - {fileID: 1980606529}
+  - {fileID: 1973372543}
+  - {fileID: 794732299}
+  - {fileID: 1234512458}
+  characterOne: {fileID: 1200946996}
+  characterTwo: {fileID: 1234512458}
+--- !u!1 &794732299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 143816, guid: 2e6391b851bd6104aa35c25d824e40b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1225514005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1084931984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010723399292, guid: 11db918338e063f4b86b6024c791e5a8,
@@ -574,6 +650,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1200946996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: dd6550ece43af764e8e9a802baa977e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1412799993}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1216588619
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,6 +703,10 @@ PrefabInstance:
     - target: {fileID: 143816, guid: 2e6391b851bd6104aa35c25d824e40b1, type: 3}
       propertyPath: m_Name
       value: troll_02_01_Mecanim
+      objectReference: {fileID: 0}
+    - target: {fileID: 143816, guid: 2e6391b851bd6104aa35c25d824e40b1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 443822, guid: 2e6391b851bd6104aa35c25d824e40b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -672,6 +758,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e6391b851bd6104aa35c25d824e40b1, type: 3}
+--- !u!1 &1234512458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1234512459}
+  m_Layer: 0
+  m_Name: Empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1234512459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234512458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1738759614}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1235893322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -687,7 +803,7 @@ PrefabInstance:
     - target: {fileID: 4803014352389650695, guid: 06cb2b131fe009c47a523671a8fa9ed8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8429865231615740692, guid: 06cb2b131fe009c47a523671a8fa9ed8,
         type: 3}
@@ -945,7 +1061,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
@@ -1047,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012226140144, guid: 11db918338e063f4b86b6024c791e5a8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010723399292, guid: 11db918338e063f4b86b6024c791e5a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1095,6 +1211,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11db918338e063f4b86b6024c791e5a8, type: 3}
+--- !u!1 &1634681390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013586557078, guid: 3c9c8a8bf50e6b5439ab9db67bc82586,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756705832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1653019083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,6 +1423,7 @@ Transform:
   - {fileID: 147139070}
   - {fileID: 695205734}
   - {fileID: 680386685}
+  - {fileID: 1234512459}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1317,7 +1440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013586557078, guid: 3c9c8a8bf50e6b5439ab9db67bc82586, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000011578242470, guid: 3c9c8a8bf50e6b5439ab9db67bc82586, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1369,6 +1492,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c9c8a8bf50e6b5439ab9db67bc82586, type: 3}
+--- !u!1 &1973372543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4803014352389650695, guid: 06cb2b131fe009c47a523671a8fa9ed8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1235893322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1980606529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8ba535c70bbcf7b46b0cba1188faae47,
+    type: 3}
+  m_PrefabInstance: {fileID: 603801234}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &393421251274117783
 GameObject:
   m_ObjectHideFlags: 0

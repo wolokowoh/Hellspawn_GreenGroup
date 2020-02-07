@@ -21,6 +21,12 @@ public class DialogueSceneManager : MonoBehaviour
     private int lastIndex;
     private int currentIndex;
     private bool loadingScene;
+
+    public List<GameObject> objects;
+
+    public GameObject characterOne;
+    public GameObject characterTwo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +35,18 @@ public class DialogueSceneManager : MonoBehaviour
         numOfMessages = messagesToDisplay.Count;
         lastIndex = numOfMessages - 1;
         canvasManager.SetMessage(messagesToDisplay[currentIndex].message);
+        foreach (GameObject character in objects)
+        {
+            character.SetActive(false);
+        }
+        if (canvasManager.defaultCharacter == 1)
+        {
+            characterTwo.SetActive(true);
+        }
+        else
+        {
+            characterTwo.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -101,6 +119,19 @@ public class DialogueSceneManager : MonoBehaviour
                 if (index == currentIndex)
                 {
                     characterSwap = true;
+                }
+            }
+            if (characterSwap)
+            {
+                if (characterOne.activeInHierarchy)
+                {
+                    characterTwo.SetActive(true);
+                    characterOne.SetActive(false);
+                }
+                else
+                {
+                    characterTwo.SetActive(false);
+                    characterOne.SetActive(true);
                 }
             }
             canvasManager.ChangeMessage(message, characterSwap);
