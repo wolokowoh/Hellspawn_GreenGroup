@@ -1005,28 +1005,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1521696899}
-  - component: {fileID: 1521696898}
+  - component: {fileID: 1521696900}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1521696898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521696897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b5098742764504fadbecb4489a7a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponEquipped: 1
-  resistanceToShowInEditorFoTest: -59
 --- !u!4 &1521696899
 Transform:
   m_ObjectHideFlags: 0
@@ -1041,6 +1027,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1521696900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521696897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336b02350cb1c9d469bca75f28957e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numHealthPotions: 0
+  numMagicPotions: 0
+  maxPotions: 99
 --- !u!1 &1867702810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 73ba8a89e1a92d1488fb76a3d32910bf,
@@ -1377,11 +1378,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvasPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 1140960539555521929, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: vocals
-      value: 
-      objectReference: {fileID: 95516734}
     - target: {fileID: 1140960539555521928, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1562,14 +1558,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 675211698, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 95516734}
-    - target: {fileID: 930467481, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 95516734}
     - target: {fileID: 559852127, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1641,6 +1629,19 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1140960539555521929, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: vocals
+      value: 
+      objectReference: {fileID: 95516734}
+    - target: {fileID: 675211698, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 95516734}
+    - target: {fileID: 930467481, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 95516734}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
 --- !u!1 &1140960538674929877 stripped
@@ -1834,6 +1835,6 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerResistance
       value: 
-      objectReference: {fileID: 1521696898}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eeeeb499723d184faf1c9762bb55a4e, type: 3}

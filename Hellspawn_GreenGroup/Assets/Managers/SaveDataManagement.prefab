@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6136606707414375947}
   m_Layer: 0
   m_Name: SaveDataManagement
-  m_TagString: Untagged
+  m_TagString: SaveData
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d542847eac718564ea092c13536e198e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numHealthPotions: 0
+  numMagicPotions: 99
+  maxHealthPotions: 0
+  maxMagicPotions: 99

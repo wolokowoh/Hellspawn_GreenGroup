@@ -17,29 +17,21 @@ public class TestGameManager : MonoBehaviour
     public GameObject IceOrb;
     public bool UIGameOverTrigger;
     public string levelName;
-    public string pickupName;
 
-    public PlayerResistanceExample PlayerResistance;
+    private PlayerResistanceExample PlayerResistance;
 
-    string msg = "This is the test message. If you are seeing this, \n"
-            + "I guess that this is working as intended.";
-    string msg2 = "Also a test message.";
+    // add something update UI vased on playerinventory
 
     // Start is called before the first frame update
     void Start()
     {
-
         UIGameOverTrigger = false;
         //hp = GameObject.Find("Player").GetComponent<PlayerController>().health;
         // could add max health here
         updateUI.displayLevelName(levelName);
-        updateUI.displayPickupMessage(pickupName + " Obtained");
+        
         updateUI.setWeaponToCurrent(ClawsOrb);
 
-        // sets which weapons we allow the player to equip
-        SaveData.Instance.setPlayerHasBloodWeapon(false);
-        SaveData.Instance.setPlayerHasIceWeapon(true);
-        SaveData.Instance.setPlayerHasPoisonWeapon(false);
 
     }
 
@@ -65,7 +57,7 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(ClawsOrb);
         }
         else if ((Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2))
-           && SaveData.Instance.getPlayerHasIceWeapon()
+           && SaveData.Instance.GetPlayerHasIceWeapon()
            )
         {
             // change whatever else you need before updating UI
@@ -73,7 +65,7 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(IceOrb);
         }
         else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3))
-            && SaveData.Instance.getPlayerHasPoisonWeapon()
+            && SaveData.Instance.GetPlayerHasPoisonWeapon()
            )
         {
             // change whatever else you need before updating UI
@@ -81,7 +73,7 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(PoisonOrb);
         }
         else if ((Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Alpha4))
-            && SaveData.Instance.getPlayerHasBloodWeapon()
+            && SaveData.Instance.GetPlayerHasBloodWeapon()
            )
         {
             // change whatever else you need before updating UI
@@ -89,27 +81,11 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(BloodOrb);
         }
 
-
-        // test for structure to make sure enemies and players can use it as a variable
-        ResistancesStructure resistancesStructure = new ResistancesStructure();
-        resistancesStructure.SetBloodResistance(5);
-        hp = resistancesStructure.GetBloodResistance();
-
-        if(updateUI.Dialogue.activeInHierarchy && Input.GetKeyDown(KeyCode.T))
-        {
-            if (updateUI.getCurrentDialogueString() == msg)
-            {
-                updateUI.changeDialogTextToNextMessage(msg2);
-            }
-            else // In this case its msg two
-            {
-                updateUI.cutOffDialogue();
-            }
-        }
-        else if(Input.GetKeyDown(KeyCode.T))
-        {
-            updateUI.cutOnDialogueAndSetText(msg);
-        }
+        PlayerInventory playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        int hpPotions = playerInventory.numHealthPotions;
+        int mpPotions = playerInventory.numMagicPotions;
+        updateUI.changeHPRefillText(hpPotions);
+        updateUI.changeMPRefillText(mpPotions);
 
     }
 

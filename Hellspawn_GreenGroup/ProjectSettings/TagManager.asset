@@ -9,6 +9,10 @@ TagManager:
   - ControlsDisplay
   - Ground
   - Turn
+  - MagicPotion
+  - HealthPotion
+  - Canvas
+  - SaveData
   layers:
   - Default
   - TransparentFX

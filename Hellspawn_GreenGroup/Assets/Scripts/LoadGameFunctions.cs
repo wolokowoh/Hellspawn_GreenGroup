@@ -37,7 +37,7 @@ public class LoadGameFunctions : MonoBehaviour
         controlsDisplayObject = GameObject.FindGameObjectWithTag("ControlsDisplay");
         menuDisplayObject.SetActive(true);
         controlsDisplayObject.SetActive(false);
-        if(SaveData.Instance.getGameBeaten() == false)
+        if(SaveData.Instance.GetGameBeaten() == false)
         {
             newGamePlus.gameObject.SetActive(false);
         }
@@ -54,19 +54,26 @@ public class LoadGameFunctions : MonoBehaviour
     {
         // set up a save system or just load the last scene/checkpoint
 
+
         // for now just load SampleScene
         SceneManager.LoadScene("SampleScene");
     }
     public static void NewGamePlus()
     {
         // setup the bools in SavaData
-
+        SaveData.Instance.SetPlayerHasBloodWeapon(true);
+        SaveData.Instance.SetPlayerHasIceWeapon(true);
+        SaveData.Instance.SetPlayerHasPoisonWeapon(true);
         // for now just load SampleScene 
         SceneManager.LoadScene("OpeningCut");
     }
     public static void NewGame()
     {
         // setup the bools in SavaData
+        SaveData.Instance.SetPlayerHasBloodWeapon(false);
+        SaveData.Instance.SetPlayerHasIceWeapon(false);
+        SaveData.Instance.SetPlayerHasPoisonWeapon(false);
+
 
         // load opening scene
 
