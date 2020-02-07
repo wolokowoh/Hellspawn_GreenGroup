@@ -1466,7 +1466,7 @@ GameObject:
   - component: {fileID: 543230653}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2108,7 +2108,7 @@ GameObject:
   - component: {fileID: 649419729}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2810,7 +2810,7 @@ GameObject:
   - component: {fileID: 744761356}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3195,7 +3195,7 @@ GameObject:
   - component: {fileID: 788970699}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4164,7 +4164,7 @@ GameObject:
   - component: {fileID: 1055936941}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4360,7 +4360,7 @@ GameObject:
   - component: {fileID: 1098711056}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4998,7 +4998,7 @@ GameObject:
   - component: {fileID: 1249032348}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5304,7 +5304,7 @@ GameObject:
   - component: {fileID: 1341878044}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7161,6 +7161,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 559852127, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7169,11 +7177,13 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
+    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 927005438, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
+    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -7202,16 +7212,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9205672633964410881, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -7222,12 +7222,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 68994369528059349, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+    - target: {fileID: 8025920818313506005, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8402,7 +8402,7 @@ GameObject:
   - component: {fileID: 2036290136}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
