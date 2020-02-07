@@ -481,69 +481,16 @@ MonoBehaviour:
   canvasManager: {fileID: 369911567}
   messagesToDisplay:
   - message:
-    - 'This is the story of Abraxas and his journey to rescue his father from the
-      clutches of '
-    - a foul demon. Will he be able to do so or will he fail? It is help to you to
-      guide him
-    - through the three lower circles of hell...
+    - Warden Lines
+    - Warden Lines
+    - Warden Lines
   - message:
-    - On the coldest of winter nights in my circle of hell, my father never returned
-      home.
-    - This wouldn't be the first time he didn't return from a night on the town, though
-      usually
-    - he'd have the decency to be back before noon. This wasn't by choice though.
-      I'd soon
-    - soon find out something nefarious was going on.
-  - message:
-    - I began looking in the first places I could think of. The first was the circle
-      of lust.
-    - 'The circle of lust was the dwelling place of those souls who commited sexual
-      sins. '
-    - You might be expecting a strip club or a brothel, but you are forgetting something
-      very
-    - important. This is hell. Instead the place is engulfed in an eternal cyclone.
-      Still they
-    - somehow managed to use that pressure to make alcohol.
-  - message:
-    - That's right the circle of lust is now full of drunkards, my father often included
-      in
-    - 'their ranks. '
-  - message:
-    - Needless to say he wasn't there. He wasn't at my psycho mother;s place either.
-    - 'I checked all of his usual haunts. I found nothing. Then I checked the place
-      I least '
-    - expected, his job. My father worked...well work is probably the wrong way to
-      put it.
-    - He was employed at a prison as a guard, though the bum rarely went.
-  - message:
-    - Let me explain. My father and I are low level demons. As members of the lowest
-      rank,
-    - 'in the hierarchy, our only opportunity for advancement was seeking employment. '
-    - Though low in rank, my father was a fairly powerful demon, so he was perfectly
-    - capable of carrying out this duty. What is shocking is that he went to work.
-      He was
-    - a bum through and through.
-  - message:
-    - 'With that said, moving up the ranks has its advantages.You could even redeem
-      your '
-    - way out of hell... eventually.
-  - message:
-    - Anyways, it turns out that he did go to work.
+    - "What do you know, someone\u2019s finally made it through the inner gates! It\u2019s
+      been "
+    - "so long since I\u2019ve had a worthy opponent. Let\u2019s get started, and
+      don\u2019t you dare"
+    - hold back!
     - 
-    - Unfortunately, he and the other guards were tricked by a prisoner.
-  - message:
-    - That prisoner now calls himself "The Warden".
-    - 
-    - 'What an arrogant pissbag. I apologize for my rudeness, but I despise that uppity
-      twat. '
-    - 
-  - message:
-    - 'I found out he was keeping my father captive, draining his energy for God knows '
-    - 'what purpose. I''d have to break into a supposedly inescapable prison in order
-      to '
-    - 'save my father. '
-    - 
-    - May the hand of fate guide me.
   indexOfCharacterChange: 01000000
   objects:
   - {fileID: 1200946996}
@@ -553,8 +500,8 @@ MonoBehaviour:
   - {fileID: 1973372543}
   - {fileID: 794732299}
   - {fileID: 1234512458}
-  characterOne: {fileID: 1200946996}
-  characterTwo: {fileID: 1234512458}
+  characterOne: {fileID: 794732299}
+  characterTwo: {fileID: 1634681390}
 --- !u!1 &794732299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 143816, guid: 2e6391b851bd6104aa35c25d824e40b1,
@@ -1266,7 +1213,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 560f05221f730c24580721ea7d706670, type: 2}
+  - {fileID: 2100000, guid: c8065ee6228753d4a9eadf5cbb324085, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
