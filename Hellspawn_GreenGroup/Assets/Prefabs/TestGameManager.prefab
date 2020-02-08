@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateUI: {fileID: 0}
-  hp: 50
+  hp: 100
   maxHP: 100
   hpRefillCount: 10
   BloodOrb: {fileID: 0}
@@ -53,5 +53,3 @@ MonoBehaviour:
   IceOrb: {fileID: 0}
   UIGameOverTrigger: 0
   levelName: SomeLevelName
-  pickupName: SomePickup
-  PlayerResistance: {fileID: 0}
