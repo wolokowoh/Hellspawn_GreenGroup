@@ -7,7 +7,8 @@ public class EnemyController : MonoBehaviour
     Animator anim;
     GameObject player;
     float playerHealth;
-    PlayerController playerController;
+    public PlayerController playerController;
+    public TestGameManager TGManager;
     EnemyHealth enemyHeatlh;
     bool playerInRange;
     float timer;
@@ -19,7 +20,7 @@ public class EnemyController : MonoBehaviour
      void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        //playerHealth = GameObject.Find("Player").GetComponent<TestGameManager>().hp;
+        playerHealth = TGManager.hp;
         enemyHeatlh = GetComponent<EnemyHealth>();
         anim = GetComponent<Animator>();
     }

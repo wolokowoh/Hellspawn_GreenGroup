@@ -183,8 +183,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.4, z: 0.2}
-  m_Center: {x: -4.9023488e-17, y: 0.1877229, z: 0.03448044}
+  m_Size: {x: 0.25, y: 0.4, z: 0.2670409}
+  m_Center: {x: -1.166866e-17, y: 0.18772292, z: 0.018686224}
 --- !u!114 &135482002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3182,6 +3182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc13a1ffd958254418705ec6a76ad260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 135481999}
+  TGManager: {fileID: 1179973340}
   speed: 2
   movingRight: 1
 --- !u!114 &1869701325
@@ -3226,8 +3228,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.13441387, y: 0.16276582, z: 0.09540402}
-  m_Center: {x: 0.002186382, y: 0.08131398, z: 0.028410466}
+  m_Size: {x: 0.13441387, y: 0.16276582, z: 0.11831061}
+  m_Center: {x: 0.002186382, y: 0.08131398, z: 0.016957171}
+--- !u!135 &1869701330
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869701323}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1871743416
 GameObject:
   m_ObjectHideFlags: 0
