@@ -6,26 +6,29 @@ public class EnemyController : MonoBehaviour
 {
     Animator anim;
     GameObject player;
-    float playerHealth;
-    public PlayerController playerController;
-    public TestGameManager TGManager;
-    EnemyHealth enemyHeatlh;
+    private float playerHealth;
+    PlayerController playerController;
+    EnemyHealth enemyHealth;
     bool playerInRange;
     float timer;
-    int AttackDamage = 5;
-    float timeBetweenAttacks = 0.5f;
-    public float speed;
-    public bool movingRight = true;
+    public int AttackDamage = 5;
+    public float timeBetweenAttacks = 0.5f;
+    public float speed = 2.0f;
+    public enum directions {Right, Left};
+    public directions direction = directions.Right;
 
-     void Awake()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = TGManager.hp;
-        enemyHeatlh = GetComponent<EnemyHealth>();
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        playerHealth = playerController.health;
+        enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent<Animator>();
+
+        timer = timeBetweenAttacks;
     }
 
-     void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         if (other.gameObject == player)
         {
@@ -33,18 +36,11 @@ public class EnemyController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Turn"))
         {
-            if (movingRight)
-            {
-                movingRight = false;
-            }
-            else
-            {
-                movingRight = true;
-            }
+            SwitchDirection();
         }
     }
 
-     void OnTriggerExit(Collider other)
+    void OnCollisionExit(Collision other)
     {
         if (other.gameObject == player)
         {
@@ -56,29 +52,59 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= timeBetweenAttacks && playerInRange && enemyHeatlh.currentHealth > 0)
-        {
-            Attack();
-        }
 
-        if (movingRight)
+        if (timer >= timeBetweenAttacks)
         {
-            transform.Translate(0, 0, 2 * Time.deltaTime * speed);
-            transform.localScale = new Vector3(20, 20, 20);
-        }
-        else
-        {
-            transform.Translate(0, 0, -2 * Time.deltaTime * speed);
-            transform.localScale = new Vector3(-20, 20, -20);
+            // Attack delay has passed.
+            transform.Translate(0, 0, 1 * Time.deltaTime * speed);
+
+            if (playerInRange && enemyHealth.currentHealth > 0)
+            {
+                Attack();
+            }
         }
     }
 
     void Attack()
     {
+        // Attack the player.
+        // Additional behavior: Face the direction of the player and play an attack animation.
         timer = 0f;
+
         if (playerHealth > 0)
         {
+            if (direction == directions.Right)
+            {
+               if (transform.position.x > player.transform.position.x)
+                {
+                    SwitchDirection();
+                }
+            }
+            else if (direction == directions.Left)
+            {
+                if (transform.position.x < player.transform.position.x)
+                {
+                    SwitchDirection();
+                }
+            }
+
+            anim.Play("Attack");
             playerController.TakeDamage(AttackDamage);
         }
+    }
+
+    void SwitchDirection()
+    {
+        if (direction == directions.Right)
+        {
+            direction = directions.Left;
+        }
+        else if (direction == directions.Left)
+        {
+            direction = directions.Right;
+        }
+
+        float curY = transform.eulerAngles.y;
+        transform.eulerAngles = new Vector3(0, -curY, 0);
     }
 }
