@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 8170654110109123692}
   m_Layer: 0
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 8170654110172920167}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 8170654110185398146}
   m_Layer: 0
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 8170654110222830965}
   m_Layer: 0
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 8170654110448055625}
   m_Layer: 0
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 8170654110508733591}
   m_Layer: 0
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 8170654110670387258}
   m_Layer: 0
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 8170654110696204368}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1459,7 +1459,7 @@ GameObject:
   - component: {fileID: 8170654110814531456}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 8170654111349373213}
   m_Layer: 0
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2196,7 +2196,7 @@ GameObject:
   - component: {fileID: 8170654111561955124}
   m_Layer: 0
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2564,7 +2564,7 @@ GameObject:
   - component: {fileID: 8170654111807693921}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2653,7 +2653,7 @@ GameObject:
   - component: {fileID: 8170654111866983088}
   m_Layer: 0
   m_Name: Platforms
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2734,7 +2734,7 @@ GameObject:
   - component: {fileID: 8170654111911200700}
   m_Layer: 0
   m_Name: FrostStartGate
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2813,7 +2813,7 @@ GameObject:
   - component: {fileID: 8170654111914533835}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2905,7 +2905,7 @@ GameObject:
   - component: {fileID: 8170654111924264170}
   m_Layer: 0
   m_Name: FrostStart
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3088,6 +3088,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3162,6 +3167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -3238,6 +3248,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3312,6 +3327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -3388,6 +3408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3462,6 +3487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -3538,6 +3568,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3612,6 +3647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -3688,6 +3728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3762,6 +3807,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -3838,6 +3888,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3912,6 +3967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -3988,6 +4048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4062,6 +4127,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -4138,6 +4208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4212,6 +4287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -4288,6 +4368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4362,6 +4447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -4438,6 +4528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4512,6 +4607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -4588,6 +4688,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4662,6 +4767,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -4738,6 +4848,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4812,6 +4927,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -4888,6 +5008,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4962,6 +5087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -5038,6 +5168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5112,6 +5247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -5188,6 +5328,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5262,6 +5407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -5338,6 +5488,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5412,6 +5567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -5551,6 +5711,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5625,6 +5790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -5745,10 +5915,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: 4be58173106ee6e4c8280d705c10faf4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400070, guid: 4be58173106ee6e4c8280d705c10faf4, type: 3}
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
@@ -5839,6 +6005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5913,6 +6084,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -5989,6 +6165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6063,6 +6244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -6139,6 +6325,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6213,6 +6404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -6289,6 +6485,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6363,6 +6564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -6439,6 +6645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6513,6 +6724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -6664,6 +6880,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6738,6 +6959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -6814,6 +7040,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrostPlatform (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6888,6 +7119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spire_003
       objectReference: {fileID: 0}
+    - target: {fileID: 1220578099355028, guid: 303b5931683ba2b48a9e801fdf4dcca5, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4617006545169672, guid: 303b5931683ba2b48a9e801fdf4dcca5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 77.46
@@ -6932,18 +7167,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4617006545169672, guid: 303b5931683ba2b48a9e801fdf4dcca5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617006545169672, guid: 303b5931683ba2b48a9e801fdf4dcca5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617006545169672, guid: 303b5931683ba2b48a9e801fdf4dcca5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 303b5931683ba2b48a9e801fdf4dcca5, type: 3}
 --- !u!4 &8175046778697204474 stripped
@@ -6963,6 +7186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}
@@ -7038,6 +7266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrostPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266263406474656019, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6064882125187667573, guid: 05fef304ed38fd94fb3c6ad4b133cf2d,
         type: 3}

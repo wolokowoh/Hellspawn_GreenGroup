@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 6808777619090329361}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1123,7 +1123,7 @@ GameObject:
   - component: {fileID: 6808777620233730313}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1212,7 +1212,7 @@ GameObject:
   - component: {fileID: 6808777620326806635}
   m_Layer: 0
   m_Name: Platforms
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1271,7 +1271,7 @@ GameObject:
   - component: {fileID: 6808777620371598345}
   m_Layer: 0
   m_Name: BloodStartGate
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1495,7 +1495,7 @@ GameObject:
   - component: {fileID: 6808777620487550038}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1678,7 +1678,7 @@ GameObject:
   - component: {fileID: 6808777621026572204}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1768,6 +1768,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1823,6 +1828,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &6808777618927180831 stripped
@@ -1842,6 +1857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -1897,6 +1917,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
@@ -2068,6 +2098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2123,6 +2158,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314749917831598 stripped
@@ -2142,6 +2187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -2198,6 +2248,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314749926449879 stripped
@@ -2217,6 +2277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -2273,6 +2338,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750004439940 stripped
@@ -2292,6 +2367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -2348,6 +2428,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750010898296 stripped
@@ -2367,6 +2457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -2422,6 +2517,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
@@ -2593,6 +2698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2648,6 +2758,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314749657650645 stripped
@@ -2667,6 +2787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -2722,6 +2847,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
@@ -2818,6 +2953,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2873,6 +3013,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750421524020 stripped
@@ -2892,6 +3042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -2947,6 +3102,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
@@ -3043,6 +3208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3098,6 +3268,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750122358413 stripped
@@ -3117,6 +3297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3173,6 +3358,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750296025411 stripped
@@ -3192,6 +3387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3248,6 +3448,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750932402928 stripped
@@ -3267,6 +3477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3323,6 +3538,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314751074964892 stripped
@@ -3342,6 +3567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3397,6 +3627,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
@@ -3493,6 +3733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3548,6 +3793,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750597200674 stripped
@@ -3567,6 +3822,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3623,6 +3883,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750684864912 stripped
@@ -3642,6 +3912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3698,6 +3973,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750768876678 stripped
@@ -3717,6 +4002,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3773,6 +4063,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314750814041930 stripped
@@ -3791,6 +4091,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0f6d35282fc6e494280f36fb407ebb83, type: 3}
       propertyPath: m_Name
       value: podium
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f6d35282fc6e494280f36fb407ebb83, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f6d35282fc6e494280f36fb407ebb83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3868,6 +4172,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3923,6 +4232,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314751378848902 stripped
@@ -3942,6 +4261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -3998,6 +4322,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314751477168316 stripped
@@ -4017,6 +4351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -4073,6 +4412,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314751493361864 stripped
@@ -4092,6 +4441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -4148,6 +4502,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
 --- !u!4 &485314751110400842 stripped
@@ -4167,6 +4531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPlatform (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
@@ -4222,6 +4591,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
@@ -4318,6 +4697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4372,6 +4756,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
@@ -4468,6 +4862,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPlatform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6395546989445664272, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6395546989445664287, guid: ed1ffce9ea424534e9f3053064ef82a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4522,6 +4921,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736007924358662778, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733812692151842851, guid: ed1ffce9ea424534e9f3053064ef82a8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1ffce9ea424534e9f3053064ef82a8, type: 3}
