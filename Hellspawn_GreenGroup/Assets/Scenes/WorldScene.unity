@@ -126,12 +126,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1824300826}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &135481998 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8344651576554084959, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
-    type: 3}
-  m_PrefabInstance: {fileID: 67489619918690012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &263291426
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +563,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532047953}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &550131827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 67489620730828621, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
+    type: 3}
+  m_PrefabInstance: {fileID: 67489619918690012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &561760747
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +614,6 @@ MonoBehaviour:
   deathSound: {fileID: 0}
   speed: 10
   attackDelay: 1
-  TGManager: {fileID: 1179973340}
 --- !u!65 &561760749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1144,7 +1143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda9291cc715a2a4bbf4b035ee79803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 135481998}
 --- !u!1 &735911179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4082,6 +4080,11 @@ PrefabInstance:
       propertyPath: UIGameOverTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 550131827}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62db2272ed966845bf0f956003b205c, type: 3}
 --- !u!1 &2146944452

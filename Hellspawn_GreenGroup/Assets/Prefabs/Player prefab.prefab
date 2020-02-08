@@ -98,7 +98,8 @@ MonoBehaviour:
   deathSound: {fileID: 0}
   speed: 20
   attackDelay: 1
-  TGManager: {fileID: 0}
+  TGManager: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
+    type: 3}
 --- !u!1001 &67489620583482198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116,30 +117,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: -7041381269685963124, guid: dd6550ece43af764e8e9a802baa977e6,
+    - target: {fileID: -927199367670048503, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d8fa9a9b5f23da44d9683f9715924f14, type: 2}
-    - target: {fileID: -6057140222963153312, guid: dd6550ece43af764e8e9a802baa977e6,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 545a8a9026af6b9498b3a35d9e38f07d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.11
+      value: 52.08069
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -35.7
+      value: -35.51417
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 21.784939
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
@@ -183,12 +179,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
-      propertyPath: m_LocalScale.x
+      propertyPath: m_LocalScale.y
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
-      propertyPath: m_LocalScale.y
+      propertyPath: m_LocalScale.x
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
@@ -196,6 +192,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: dd6550ece43af764e8e9a802baa977e6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 545a8a9026af6b9498b3a35d9e38f07d, type: 2}
+    - target: {fileID: -7041381269685963124, guid: dd6550ece43af764e8e9a802baa977e6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8fa9a9b5f23da44d9683f9715924f14, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6550ece43af764e8e9a802baa977e6, type: 3}
 --- !u!1 &8344651576554084959 stripped
