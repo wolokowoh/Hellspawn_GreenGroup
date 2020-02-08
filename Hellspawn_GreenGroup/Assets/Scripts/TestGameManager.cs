@@ -5,7 +5,9 @@ using UnityEngine;
 public class TestGameManager : MonoBehaviour
 {
     //public PlayerController playerController;
-    
+    public GameObject playerPrefab;
+    public GameObject cameraPrefab;
+    public Vector3 playerSpawn;
     public UpdateUI updateUI;
     public int hp = 50;
     public int maxHP = 100;
@@ -32,6 +34,8 @@ public class TestGameManager : MonoBehaviour
         
         updateUI.setWeaponToCurrent(ClawsOrb);
 
+        Instantiate(playerPrefab, playerSpawn, playerPrefab.transform.rotation);
+        Instantiate(cameraPrefab, cameraPrefab.transform.position, cameraPrefab.transform.rotation);
 
     }
 
