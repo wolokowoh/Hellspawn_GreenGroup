@@ -395,15 +395,32 @@ PrefabInstance:
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: levelName
-      value: Blood Bath
+      value: Bloody Hell
       objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: hpRefillCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62db2272ed966845bf0f956003b205c, type: 3}
+--- !u!114 &786640891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
+    type: 3}
+  m_PrefabInstance: {fileID: 786640890}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0a2413097a4134c9324e484fcd40e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &903007665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,12 +510,12 @@ PrefabInstance:
     - target: {fileID: 67489620730828622, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 36.144173
+      value: 37.63
       objectReference: {fileID: 0}
     - target: {fileID: 67489620730828622, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.784878
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 67489620730828622, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
@@ -540,6 +557,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 67489620053777491, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
+        type: 3}
+      propertyPath: TGManager
+      value: 
+      objectReference: {fileID: 786640891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7980f97f8db4ca4b8c656f2a6722ec0, type: 3}
 --- !u!1 &1277158673 stripped
