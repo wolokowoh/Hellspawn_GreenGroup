@@ -20,10 +20,11 @@ public class PlayerController : MonoBehaviour
     private bool isAttacking = false;
     public float speed;
     public float attackDelay = 1.0f;
-    public TestGameManager TGManager;
+    private TestGameManager TGManager;
 
     void Start()
     {
+        TGManager = GameObject.FindGameObjectWithTag("TGManager").GetComponent<TestGameManager>();
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityMod;
@@ -33,9 +34,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        playerRb = GetComponent<Rigidbody>();
+        playerAnim = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
             playerAnim.Play("Jump");
+            
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
         }
@@ -104,6 +109,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        playerRb = GetComponent<Rigidbody>();
+        playerAnim = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
+
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f);

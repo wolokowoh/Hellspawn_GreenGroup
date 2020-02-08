@@ -13,6 +13,8 @@ TagManager:
   - HealthPotion
   - Canvas
   - SaveData
+  - PoisonFloor
+  - TGManager
   layers:
   - Default
   - TransparentFX
