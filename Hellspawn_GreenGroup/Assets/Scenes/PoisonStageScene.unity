@@ -139,6 +139,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 319568512067730339, guid: a06a2bc34de0bd141bf07865915783a8,
+        type: 3}
+      propertyPath: m_Name
+      value: PauseManager
+      objectReference: {fileID: 0}
     - target: {fileID: 319568512067730341, guid: a06a2bc34de0bd141bf07865915783a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -193,11 +198,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730339, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: m_Name
-      value: PauseManager
       objectReference: {fileID: 0}
     - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
         type: 3}
@@ -319,6 +319,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5290266967005232805, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
+      propertyPath: m_Name
+      value: TestGameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232807, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -373,11 +378,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290266967005232805, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: m_Name
-      value: TestGameManager
       objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
@@ -1179,6 +1179,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 67489620053777491, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
+        type: 3}
+      propertyPath: TGManager
+      value: 
+      objectReference: {fileID: 648198174}
     - target: {fileID: 67489620730828622, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,22 +1242,17 @@ PrefabInstance:
     - target: {fileID: 5014038818009786444, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.11
+      value: 50.26
       objectReference: {fileID: 0}
     - target: {fileID: 5014038818009786444, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -35.7
+      value: -38.76
       objectReference: {fileID: 0}
     - target: {fileID: 5014038818009786444, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 67489620053777491, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
-        type: 3}
-      propertyPath: TGManager
-      value: 
-      objectReference: {fileID: 648198174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7980f97f8db4ca4b8c656f2a6722ec0, type: 3}
