@@ -28,15 +28,19 @@ public class EnemyController : MonoBehaviour
         timer = timeBetweenAttacks;
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Turn"))
+        {
+            SwitchDirection();
+        }
+    }
+
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject == player)
         {
             playerInRange = true;
-        }
-        if (other.gameObject.CompareTag("Turn"))
-        {
-            SwitchDirection();
         }
     }
 
