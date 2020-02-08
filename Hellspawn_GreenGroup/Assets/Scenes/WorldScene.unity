@@ -132,18 +132,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 67489619918690012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &135481999 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 67489620053777491, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
-    type: 3}
-  m_PrefabInstance: {fileID: 67489619918690012}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135481998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a735dfb73937384aacd8ca056f2aefc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &263291426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,7 +2666,7 @@ PrefabInstance:
     - target: {fileID: 1140960539555521932, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 1140960539555521928, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
@@ -3026,10 +3014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc13a1ffd958254418705ec6a76ad260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 135481999}
-  TGManager: {fileID: 1179973340}
+  AttackDamage: 5
+  timeBetweenAttacks: 0.5
   speed: 2
-  movingRight: 1
+  direction: 0
 --- !u!114 &1869701325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3684,7 +3672,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 84dcbb1c8cb45c24fb01778e02fc1180, type: 2}
+      objectReference: {fileID: 9100000, guid: 5135e716d77442d4cbc4a03be46d1eda, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
 --- !u!1 &1950486447
