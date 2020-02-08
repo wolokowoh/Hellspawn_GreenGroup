@@ -407,17 +407,12 @@ PrefabInstance:
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: levelName
-      value: The Noxious Nether
+      value: Blood Bath
       objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: hpRefillCount
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: hp
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62db2272ed966845bf0f956003b205c, type: 3}
@@ -770,21 +765,6 @@ PrefabInstance:
       propertyPath: vocals
       value: 
       objectReference: {fileID: 1493864824}
-    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.51192594
-      objectReference: {fileID: 0}
-    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.6792453
-      objectReference: {fileID: 0}
-    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.26593092
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
 --- !u!1 &1502281439 stripped
@@ -1207,7 +1187,7 @@ PrefabInstance:
     - target: {fileID: 67489620730828622, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.05
+      value: -58.04
       objectReference: {fileID: 0}
     - target: {fileID: 67489620730828622, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
         type: 3}
