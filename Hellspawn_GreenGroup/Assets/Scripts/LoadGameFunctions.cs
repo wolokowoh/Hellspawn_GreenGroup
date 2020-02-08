@@ -56,7 +56,7 @@ public class LoadGameFunctions : MonoBehaviour
 
 
         // for now just load SampleScene
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(2);
     }
     public static void NewGamePlus()
     {

@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/OpeningCut.unity
     guid: b8c1a17b5049e4745adb06bcbbf897b7
+  - enabled: 1
+    path: Assets/Scenes/HubScene.unity
+    guid: bcc03d2704c472642a45fdec4fe9e790
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Credits.unity
+    guid: 7a6b1f1f4dfdf6e4dbbd58bb6cf0f941
+  - enabled: 1
+    path: Assets/Scenes/BloodStageScene.unity
+    guid: 34319dcd449df2347b31fdfc40793323
+  - enabled: 1
+    path: Assets/Scenes/PoisonStageScene.unity
+    guid: 75eeace22566d0f46afb741b341f8cfd
   m_configObjects: {}
