@@ -290,6 +290,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 319568512067730339, guid: a06a2bc34de0bd141bf07865915783a8,
+        type: 3}
+      propertyPath: m_Name
+      value: PauseManager
+      objectReference: {fileID: 0}
     - target: {fileID: 319568512067730341, guid: a06a2bc34de0bd141bf07865915783a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -344,11 +349,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 319568512067730339, guid: a06a2bc34de0bd141bf07865915783a8,
-        type: 3}
-      propertyPath: m_Name
-      value: PauseManager
       objectReference: {fileID: 0}
     - target: {fileID: 319568512067730340, guid: a06a2bc34de0bd141bf07865915783a8,
         type: 3}
@@ -470,6 +470,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5290266967005232805, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
+      propertyPath: m_Name
+      value: TestGameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290266967005232805, guid: c62db2272ed966845bf0f956003b205c,
+        type: 3}
+      propertyPath: m_TagString
+      value: TGManager
+      objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232807, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -524,16 +534,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290266967005232805, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: m_Name
-      value: TestGameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290266967005232805, guid: c62db2272ed966845bf0f956003b205c,
-        type: 3}
-      propertyPath: m_TagString
-      value: TGManager
       objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
@@ -600,7 +600,7 @@ PrefabInstance:
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: playerSpawn.z
-      value: 402.21
+      value: 378
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62db2272ed966845bf0f956003b205c, type: 3}
