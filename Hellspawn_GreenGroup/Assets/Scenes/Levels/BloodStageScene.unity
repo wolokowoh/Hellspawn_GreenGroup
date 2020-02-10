@@ -1026,7 +1026,7 @@ PrefabInstance:
     - target: {fileID: 5966019508532052823, guid: 6572eaa94fe31fb41aa5ee4671f5736b,
         type: 3}
       propertyPath: m_Name
-      value: GatePrefab1
+      value: ReturnToHub
       objectReference: {fileID: 0}
     - target: {fileID: 4063424586420638894, guid: 6572eaa94fe31fb41aa5ee4671f5736b,
         type: 3}
@@ -1106,7 +1106,12 @@ PrefabInstance:
     - target: {fileID: 6568890978797905713, guid: 6572eaa94fe31fb41aa5ee4671f5736b,
         type: 3}
       propertyPath: buildIndexofSceneToLoad
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568890978797905713, guid: 6572eaa94fe31fb41aa5ee4671f5736b,
+        type: 3}
+      propertyPath: MessageToDisplay
+      value: Press T to Return to "Hellfire and Brimstone"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6572eaa94fe31fb41aa5ee4671f5736b, type: 3}
