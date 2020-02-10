@@ -432,7 +432,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerPrefab
       value: 
-      objectReference: {fileID: 67489620730828621, guid: b7980f97f8db4ca4b8c656f2a6722ec0,
+      objectReference: {fileID: 390656235793773366, guid: 5c00e96a3d6579541a415a0094caffe6,
         type: 3}
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
@@ -1077,5 +1077,10 @@ PrefabInstance:
       propertyPath: updateUI
       value: 
       objectReference: {fileID: 1502281447}
+    - target: {fileID: 6568890978797905713, guid: 6572eaa94fe31fb41aa5ee4671f5736b,
+        type: 3}
+      propertyPath: buildIndexofSceneToLoad
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6572eaa94fe31fb41aa5ee4671f5736b, type: 3}

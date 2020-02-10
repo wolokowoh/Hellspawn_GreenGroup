@@ -22,6 +22,15 @@ public class PlayerController : MonoBehaviour
     public float attackDelay = 1.0f;
     private TestGameManager TGManager;
 
+    private void Awake()
+    {
+        // reset to default to fix our glitch
+        // physics changes retain through scene transitions in Unity
+        // so our gravity was being modded twice and thats 400 x default instead of 20
+        // this is default gravity, reset it in Awake so start mods it right
+        var gravity = new Vector3(0f, -9.81f, 0f);
+        Physics.gravity = gravity;
+    }
     void Start()
     {
         TGManager = GameObject.FindGameObjectWithTag("TGManager").GetComponent<TestGameManager>();
