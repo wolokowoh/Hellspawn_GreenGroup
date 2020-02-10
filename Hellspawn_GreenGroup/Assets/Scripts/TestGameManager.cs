@@ -9,7 +9,7 @@ public class TestGameManager : MonoBehaviour
     public GameObject cameraPrefab;
     public Vector3 playerSpawn;
     public UpdateUI updateUI;
-    public int hp = 50;
+    public int hp = 100;
     public int maxHP = 100;
     public int hpRefillCount = 10;
 

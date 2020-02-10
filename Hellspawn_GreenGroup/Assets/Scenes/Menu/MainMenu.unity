@@ -654,6 +654,20 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 791222953}
+    - target: {fileID: 1089625722591800877, guid: e2e760354a7e0c343936f0b5ba8bb659,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637211722472624178, guid: e2e760354a7e0c343936f0b5ba8bb659,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Attack          G
+
+
+
+        Change it to whatever we need it to be'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e760354a7e0c343936f0b5ba8bb659, type: 3}
 --- !u!1001 &2044710053986187851

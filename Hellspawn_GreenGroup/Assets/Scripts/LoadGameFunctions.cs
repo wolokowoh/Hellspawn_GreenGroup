@@ -53,9 +53,11 @@ public class LoadGameFunctions : MonoBehaviour
     public static void LoadSceneFromSave()
     {
         // set up a save system or just load the last scene/checkpoint
+        SaveData.Instance.SetPlayerHasBloodWeapon(true);
+        SaveData.Instance.SetPlayerHasIceWeapon(true);
+        SaveData.Instance.SetPlayerHasPoisonWeapon(true);
 
-
-        // for now just load SampleScene
+        // for now just load the hub
         SceneManager.LoadScene(2);
     }
     public static void NewGamePlus()

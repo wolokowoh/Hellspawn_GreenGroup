@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/OpeningCut.unity
     guid: b8c1a17b5049e4745adb06bcbbf897b7
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/OpeningCutPart2.unity
-    guid: 57a44d721b4f60d4b8dee52374784997
-  - enabled: 1
     path: Assets/Scenes/Levels/HubScene.unity
     guid: bcc03d2704c472642a45fdec4fe9e790
   - enabled: 1
