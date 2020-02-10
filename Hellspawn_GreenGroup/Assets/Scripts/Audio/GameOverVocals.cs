@@ -30,7 +30,7 @@ public class GameOverVocals : MonoBehaviour
         // if we do one save file system, just get last scene
 
         yield return new WaitForSeconds(7);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void playQuit()
@@ -46,7 +46,7 @@ public class GameOverVocals : MonoBehaviour
         // if we do one save file system, just get last scene
 
         yield return new WaitForSeconds(7);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
     // Start is called before the first frame update
     void Start()

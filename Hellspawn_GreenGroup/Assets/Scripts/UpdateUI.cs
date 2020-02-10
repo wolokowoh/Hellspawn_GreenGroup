@@ -80,10 +80,10 @@ public class UpdateUI : MonoBehaviour
     public GameObject interaction;
     public Text interactionText;
 
-
+  
     private void Awake()
     {
-        // everything should be enabled and active at first
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -112,8 +112,9 @@ public class UpdateUI : MonoBehaviour
         poisonSlider = PoisonOrbSliderObject.GetComponent<Slider>();
         iceSlider = IceOrbSliderObject.GetComponent<Slider>();
         healthSlider = RoseHealthOrbSliderObject.GetComponent<Slider>();
-        // this way you can't ue the invisible buttons
+
         gameOver.SetActive(false);
+
         // set the objects inactive based on current weapon
 
 
@@ -245,6 +246,9 @@ public class UpdateUI : MonoBehaviour
         }
         
     }
+
+
+    
     public IEnumerator GameOver()
     {
         gameOver.SetActive(true);
@@ -287,9 +291,9 @@ public class UpdateUI : MonoBehaviour
             }
 
         }
-        
 
         
+
         // wait however long you want to before the menu pops up or we can use it for Noah's mockery
         yesButtonText = yesButtonTextObj.GetComponent<Text>();
         noButtonText= noButtonTextObj.GetComponent<Text>();
@@ -309,7 +313,7 @@ public class UpdateUI : MonoBehaviour
         tempColor.a = 1f;
         noButtonText.color = tempColor;
 
-        // we need to add in the laughing somewhere
+        
 
 
     }

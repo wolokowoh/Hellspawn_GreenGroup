@@ -18,8 +18,8 @@ public class TestGameManager : MonoBehaviour
     public GameObject ClawsOrb;
     public GameObject IceOrb;
     public bool UIGameOverTrigger;
+    private bool gameOver; // prevents the collider from calling the coroutine repeatedly
     public string levelName;
-
     private PlayerResistanceExample PlayerResistance;
 
     // add something update UI vased on playerinventory
@@ -27,6 +27,7 @@ public class TestGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameOver = false;
         UIGameOverTrigger = false;
         //hp = GameObject.Find("Player").GetComponent<PlayerController>().health;
         // could add max health here
@@ -45,7 +46,12 @@ public class TestGameManager : MonoBehaviour
         if (UIGameOverTrigger)
         {
             UIGameOverTrigger = false;
-            updateUI.StartCoroutine("GameOver");
+            if (!gameOver)
+            {
+                gameOver = true;
+                updateUI.StartCoroutine("GameOver");
+            }
+            
         }
         updateUI.changeHealthSliderValue(hp, maxHP);
 
