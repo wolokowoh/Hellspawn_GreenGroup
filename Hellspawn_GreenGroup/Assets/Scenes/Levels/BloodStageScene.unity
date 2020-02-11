@@ -1242,6 +1242,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: playQuit
       objectReference: {fileID: 0}
+    - target: {fileID: 675211698, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 930467481, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
