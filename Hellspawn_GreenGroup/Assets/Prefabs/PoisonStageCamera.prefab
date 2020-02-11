@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7647015561397277525}
   - component: {fileID: 7647015561397277524}
   - component: {fileID: 7647015561397277523}
+  - component: {fileID: 5049293045742847872}
   m_Layer: 0
   m_Name: PoisonStageCamera
   m_TagString: MainCamera
@@ -96,3 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda9291cc715a2a4bbf4b035ee79803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!45 &5049293045742847872
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647015561397277527}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 3f66cda555f3ed8418ff310e99774cc7, type: 2}

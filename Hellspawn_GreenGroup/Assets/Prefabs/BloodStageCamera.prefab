@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1008823786808781742}
   - component: {fileID: 1008823786808781743}
   - component: {fileID: 1008823786808781736}
+  - component: {fileID: 920366885390590936}
   m_Layer: 0
   m_Name: BloodStageCamera
   m_TagString: MainCamera
@@ -43,7 +44,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -96,3 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda9291cc715a2a4bbf4b035ee79803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!45 &920366885390590936
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008823786808781740}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 2b1940db6bceb9449b1caeb4a90cea80, type: 2}

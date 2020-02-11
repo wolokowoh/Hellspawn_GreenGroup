@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4147157942400386344}
   - component: {fileID: 4147157942400386345}
   - component: {fileID: 4147157942400386350}
+  - component: {fileID: -3044703635185805106}
   m_Layer: 0
   m_Name: Ice Camera
   m_TagString: MainCamera
@@ -96,3 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda9291cc715a2a4bbf4b035ee79803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!45 &-3044703635185805106
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147157942400386346}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 265f2d6180156ae409afade43271dee0, type: 2}

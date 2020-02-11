@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2937922554699698109}
   - component: {fileID: 2937922554699698108}
   - component: {fileID: 2937922554699698107}
+  - component: {fileID: 4255146056459340049}
   m_Layer: 0
   m_Name: HubCamera
   m_TagString: MainCamera
@@ -96,3 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda9291cc715a2a4bbf4b035ee79803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!45 &4255146056459340049
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2937922554699698111}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 3d52830ca3b2af943b55c511993c7cf0, type: 2}
