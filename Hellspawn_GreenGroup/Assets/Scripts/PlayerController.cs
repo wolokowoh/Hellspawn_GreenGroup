@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
     public int health;
+    private int maxHealth;
     public float jumpForce;
     public float gravityMod;
     private float attackDamage = 5;
@@ -152,5 +153,7 @@ public class PlayerController : MonoBehaviour
             playerAnim.Play("Death");
         }
     }
+
+    public void SetMaxHealth(int maxHP) => maxHealth = maxHP;
 }
 

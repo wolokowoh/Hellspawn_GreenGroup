@@ -21,7 +21,7 @@ public class TestGameManager : MonoBehaviour
     private bool gameOver; // prevents the collider from calling the coroutine repeatedly
     public string levelName;
     private PlayerResistanceExample PlayerResistance;
-
+    PlayerController controller;
     // add something update UI vased on playerinventory
 
     // Start is called before the first frame update
@@ -37,6 +37,10 @@ public class TestGameManager : MonoBehaviour
 
         Instantiate(playerPrefab, playerSpawn, playerPrefab.transform.rotation);
         Instantiate(cameraPrefab, cameraPrefab.transform.position, cameraPrefab.transform.rotation);
+        controller =
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        
+        controller.SetMaxHealth(maxHP);
 
     }
 
@@ -91,11 +95,15 @@ public class TestGameManager : MonoBehaviour
             updateUI.setWeaponToCurrent(BloodOrb);
         }
 
-        PlayerInventory playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+        PlayerInventory playerInventory = 
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
         int hpPotions = playerInventory.numHealthPotions;
         int mpPotions = playerInventory.numMagicPotions;
         updateUI.changeHPRefillText(hpPotions);
         updateUI.changeMPRefillText(mpPotions);
+
+        hp = controller.health;
+        updateUI.changeHealthSliderValue(hp, maxHP);
 
     }
 
