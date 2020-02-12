@@ -53,12 +53,14 @@ public class LoadGameFunctions : MonoBehaviour
     public static void LoadSceneFromSave()
     {
         // set up a save system or just load the last scene/checkpoint
-        SaveData.Instance.SetPlayerHasBloodWeapon(true);
-        SaveData.Instance.SetPlayerHasIceWeapon(true);
-        SaveData.Instance.SetPlayerHasPoisonWeapon(true);
+        int level = SaveData.Instance.GetLastLevel();
+        if (level == 0)
+        {
+            level = 1;
+        }
 
         // for now just load the hub
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(level);
     }
     public static void NewGamePlus()
     {
@@ -66,7 +68,8 @@ public class LoadGameFunctions : MonoBehaviour
         SaveData.Instance.SetPlayerHasBloodWeapon(true);
         SaveData.Instance.SetPlayerHasIceWeapon(true);
         SaveData.Instance.SetPlayerHasPoisonWeapon(true);
-        // for now just load SampleScene 
+        SetCommonNewGameParameters();
+        // for now just load opening cut
         SceneManager.LoadScene("OpeningCut");
     }
     public static void NewGame()
@@ -77,13 +80,23 @@ public class LoadGameFunctions : MonoBehaviour
         SaveData.Instance.SetPlayerHasPoisonWeapon(false);
 
 
+        SetCommonNewGameParameters();
+
         // load opening scene
+        SaveData.Instance.SetHealthPotionCount(0);
+        SaveData.Instance.SetMagicPotionCount(0);
 
         // for now just load SampleScene 
         SceneManager.LoadScene("OpeningCut");
     }
 
-    
+    public static void SetCommonNewGameParameters()
+    {
+        SaveData.Instance.SetHasBeatenBlood(false);
+        SaveData.Instance.SetHasBeatenIce(false);
+        SaveData.Instance.SetHasBeatenPoison(false);
+        SaveData.Instance.SetGameBeaten(false);
+    }
     public static void showControlsDisplay()
     {
         menuDisplayObject.SetActive(false);
