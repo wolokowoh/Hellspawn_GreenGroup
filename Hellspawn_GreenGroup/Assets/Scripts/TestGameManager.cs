@@ -18,7 +18,7 @@ public class TestGameManager : MonoBehaviour
     public GameObject ClawsOrb;
     public GameObject IceOrb;
     public bool UIGameOverTrigger;
-    private bool gameOver; // prevents the collider from calling the coroutine repeatedly
+    public bool gameOver; // prevents the collider from calling the coroutine repeatedly
     public string levelName;
     private PlayerResistanceExample PlayerResistance;
     PlayerController controller;

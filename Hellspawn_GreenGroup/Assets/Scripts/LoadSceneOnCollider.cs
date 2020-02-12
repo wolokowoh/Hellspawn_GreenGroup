@@ -16,7 +16,7 @@ public class LoadSceneOnCollider : MonoBehaviour
             // PENALTY
             other.gameObject.GetComponent<PlayerInventory>().numHealthPotions = 0;
             other.gameObject.GetComponent<PlayerInventory>().numMagicPotions = 0;
-            other.gameObject.GetComponent<PlayerController>().health = 0;
+            other.gameObject.GetComponent<PlayerController>().SetCurrentHealth(0);
             testGameManager.UIGameOverTrigger = true;
             
             

@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float attackDelay = 1.0f;
     private TestGameManager TGManager;
+    private bool death;
 
     private void Awake()
     {
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
+        death = false;
         TGManager = GameObject.FindGameObjectWithTag("TGManager").GetComponent<TestGameManager>();
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
@@ -47,6 +49,14 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
+        if (!death)
+        {
+            if (health <= 0)
+            {
+                death = true;
+                playerAnim.Play("Death");
+            }
+        }
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
             playerAnim.Play("Jump");
@@ -150,10 +160,18 @@ public class PlayerController : MonoBehaviour
 
         if (health <= 0)
         {
-            playerAnim.Play("Death");
+            if (!TGManager.gameOver)
+            {
+                TGManager.UIGameOverTrigger = true;
+            }
+            
         }
     }
-
+    // allows you to set the max in the game manager
     public void SetMaxHealth(int maxHP) => maxHealth = maxHP;
+    // you can use this to load current HP from Save later OR INSTANT DEATH.
+    public void SetCurrentHealth(int currentHP) => health = currentHP;
+
+
 }
 
