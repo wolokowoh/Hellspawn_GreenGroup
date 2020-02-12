@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TestGameManager : MonoBehaviour
 {
-
     //public PlayerController playerController;
     public GameObject playerPrefab;
     public GameObject cameraPrefab;
@@ -29,7 +27,6 @@ public class TestGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SaveData.Instance.SetLastLevel(SceneManager.GetActiveScene().buildIndex);
         gameOver = false;
         UIGameOverTrigger = false;
         //hp = GameObject.Find("Player").GetComponent<PlayerController>().health;

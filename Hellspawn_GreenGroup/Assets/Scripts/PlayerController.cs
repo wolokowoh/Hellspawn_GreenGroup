@@ -57,78 +57,73 @@ public class PlayerController : MonoBehaviour
                 playerAnim.Play("Death");
             }
         }
-        // checkagain if you just changed it
-        if (!death)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
+            playerAnim.Play("Jump");
+            
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isOnGround && !gameOver)
+        {
+            playerAnim.Play("Jump");
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+        }
+        if (Input.GetKeyDown(KeyCode.W) && isOnGround && !gameOver)
+        {
+            playerAnim.Play("Jump");
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.position += Vector3.left * speed * Time.deltaTime;
+            transform.eulerAngles = new Vector3(0, -90, 0);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.position += Vector3.left * speed * Time.deltaTime;
+            transform.eulerAngles = new Vector3(0, -90, 0);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.position += Vector3.right * speed * Time.deltaTime;
+            transform.eulerAngles = new Vector3(0, 90, 0);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += Vector3.right * speed * Time.deltaTime;
+            transform.eulerAngles = new Vector3(0, 90, 0);
+        }
+        if (Input.GetKey(KeyCode.G))
+        {
+            if (isAttacking == false)
             {
-                playerAnim.Play("Jump");
-
-                playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-                isOnGround = false;
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow) && isOnGround && !gameOver)
-            {
-                playerAnim.Play("Jump");
-                playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-                isOnGround = false;
-            }
-            if (Input.GetKeyDown(KeyCode.W) && isOnGround && !gameOver)
-            {
-                playerAnim.Play("Jump");
-                playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-                isOnGround = false;
-            }
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                transform.position += Vector3.left * speed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(0, -90, 0);
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.position += Vector3.left * speed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(0, -90, 0);
-            }
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                transform.position += Vector3.right * speed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(0, 90, 0);
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.position += Vector3.right * speed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(0, 90, 0);
-            }
-            if (Input.GetKey(KeyCode.G))
-            {
-                if (isAttacking == false)
+                isAttacking = true;
+                int rand = Random.Range(1, 3);
+                if (rand == 1)
                 {
-                    isAttacking = true;
-                    int rand = Random.Range(1, 3);
-                    if (rand == 1)
-                    {
-                        playerAnim.Play("LAttack");
-                    }
-                    else if (rand == 2)
-                    {
-                        playerAnim.Play("LAttackMirror");
-                    }
-                    StartCoroutine("AttackTimer");
+                    playerAnim.Play("LAttack");
                 }
-            }
-
-            if (isOnGround == true)
-            {
-                float move = Input.GetAxis("Horizontal");
-                if (move < 0)
+                else if (rand == 2)
                 {
-                    move = move * -1;
+                    playerAnim.Play("LAttackMirror");
                 }
-
-                playerAnim.SetFloat("InputX", move);
+                StartCoroutine("AttackTimer");
             }
         }
-        
+
+        if (isOnGround == true)
+        {
+            float move = Input.GetAxis("Horizontal");
+            if (move < 0)
+            {
+                move = move * -1;
+            }
+
+            playerAnim.SetFloat("InputX", move);
+        }
     }
 
 
