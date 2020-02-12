@@ -8,8 +8,8 @@ using UnityEngine.Audio;
 public class UpdateUI : MonoBehaviour
 {
 
-    public GameOverVocals vocals;
-    public AudioSource music;
+    private GameOverVocals vocals;
+    private AudioSource music;
 
     public GameObject RoseHealthOrb;
     public GameObject RoseHealthOrbSliderObject;
@@ -90,6 +90,8 @@ public class UpdateUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        vocals = GameObject.FindGameObjectWithTag("GameOverVocals").GetComponent<GameOverVocals>();
+        music = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
 
         interaction.SetActive(false);
         Dialogue.SetActive(false);

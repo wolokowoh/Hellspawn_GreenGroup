@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3657937394356422315}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,6 +170,11 @@ PrefabInstance:
     - target: {fileID: 6888399522764132496, guid: df31ea372b901c744851a9f2e0050777,
         type: 3}
       propertyPath: m_Name
+      value: GameOverVocals
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888399522764132496, guid: df31ea372b901c744851a9f2e0050777,
+        type: 3}
+      propertyPath: m_TagString
       value: GameOverVocals
       objectReference: {fileID: 0}
     - target: {fileID: 6888399522764132497, guid: df31ea372b901c744851a9f2e0050777,

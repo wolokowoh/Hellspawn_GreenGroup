@@ -61,6 +61,8 @@ public class PauseScript : MonoBehaviour
             Time.timeScale = 0;
             // disable any scripts timescale independent
 
+            AudioSource music = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+            music.Pause();
 
             var tempColor = pImage.color;
             tempColor.a = .5f;
@@ -85,9 +87,10 @@ public class PauseScript : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 1;            
+            Time.timeScale = 1;
             // reenable any scripts timescale independent
-
+            AudioSource music = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+            music.Play();
 
             var tempColor = pImage.color;
             tempColor.a = 0f;

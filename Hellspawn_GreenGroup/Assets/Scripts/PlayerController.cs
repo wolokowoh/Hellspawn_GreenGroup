@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour
     public float gravityMod;
     private float attackDamage = 5;
     public bool isOnGround = true;
-    public bool gameOver = false;
     private Animator playerAnim;
     public ParticleSystem attackParticle;
     public ParticleSystem runningParticle;
@@ -71,86 +70,72 @@ public class PlayerController : MonoBehaviour
                 playerAnim.Play("Death");
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
+        if (!death)
         {
-            playerAnim.Play("Jump");
-            
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-        }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isOnGround && !gameOver)
-        {
-            playerAnim.Play("Jump");
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-        }
-        if (Input.GetKeyDown(KeyCode.W) && isOnGround && !gameOver)
-        {
-            playerAnim.Play("Jump");
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.position += Vector3.left * speed * Time.deltaTime;
-            transform.eulerAngles = new Vector3(0, -90, 0);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position += Vector3.left * speed * Time.deltaTime;
-            transform.eulerAngles = new Vector3(0, -90, 0);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.position += Vector3.right * speed * Time.deltaTime;
-            transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += Vector3.right * speed * Time.deltaTime;
-            transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        if (Input.GetKey(KeyCode.G))
-        {
-            if (isAttacking == false)
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) 
+                || Input.GetKeyDown(KeyCode.W))
+                && isOnGround)
             {
-                isAttacking = true;
-                int rand = Random.Range(1, 3);
-                if (rand == 1)
-                {
-                    playerAnim.Play("LAttack");
-                }
-                else if (rand == 2)
-                {
-                    playerAnim.Play("LAttackMirror");
-                }
-                StartCoroutine("AttackTimer");
+                playerAnim.Play("Jump");
+                playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                isOnGround = false;
             }
-        }
-
-        if (isOnGround == true)
-        {
-            float move = Input.GetAxis("Horizontal");
-            if (move < 0)
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
-                move = move * -1;
+                transform.position += Vector3.left * speed * Time.deltaTime;
+                transform.eulerAngles = new Vector3(0, -90, 0);
+            }
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                transform.position += Vector3.right * speed * Time.deltaTime;
+                transform.eulerAngles = new Vector3(0, 90, 0);
+            }
+            if (Input.GetKey(KeyCode.G))
+            {
+                if (isAttacking == false)
+                {
+                    isAttacking = true;
+                    int rand = Random.Range(1, 3);
+                    if (rand == 1)
+                    {
+                        playerAnim.Play("LAttack");
+                    }
+                    else if (rand == 2)
+                    {
+                        playerAnim.Play("LAttackMirror");
+                    }
+                    StartCoroutine("AttackTimer");
+                }
             }
 
-            playerAnim.SetFloat("InputX", move);
+            if (isOnGround == true)
+            {
+                float move = Input.GetAxis("Horizontal");
+                if (move < 0)
+                {
+                    move = move * -1;
+                }
+
+                playerAnim.SetFloat("InputX", move);
+            }
         }
     }
 
-
     void FixedUpdate()
     {
-        playerRb = GetComponent<Rigidbody>();
-        playerAnim = GetComponent<Animator>();
-        playerAudio = GetComponent<AudioSource>();
+        if (!death)
+        {
 
-        float moveHorizontal = Input.GetAxis("Horizontal");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f);
-        playerRb.AddForce(movement * speed);
+            playerRb = GetComponent<Rigidbody>();
+            playerAnim = GetComponent<Animator>();
+            playerAudio = GetComponent<AudioSource>();
+
+            float moveHorizontal = Input.GetAxis("Horizontal");
+
+            Vector3 movement = new Vector3(moveHorizontal, 0.0f);
+            playerRb.AddForce(movement * speed);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
