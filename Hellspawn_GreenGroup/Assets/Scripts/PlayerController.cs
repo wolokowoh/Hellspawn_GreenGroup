@@ -1,9 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum Weapon
+{
+    Claws,
+    Ice,
+    Blood,
+    Poison
+}
 public class PlayerController : MonoBehaviour
 {
+    public int bloodBarCurrentMP;
+    public int bloodBarMaxMP;
+    public int iceBarCurrentMP;
+    public int iceBarMaxMP;
+    public int poisonBarCurrentMP;
+    public int poisonBarMaxMP;
+
     private Rigidbody playerRb;
     public int health;
     private int maxHealth;
@@ -23,6 +36,7 @@ public class PlayerController : MonoBehaviour
     public float attackDelay = 1.0f;
     private TestGameManager TGManager;
     private bool death;
+    public Weapon currentWeapon = Weapon.Claws;
 
     private void Awake()
     {
@@ -172,6 +186,91 @@ public class PlayerController : MonoBehaviour
     // you can use this to load current HP from Save later OR INSTANT DEATH.
     public void SetCurrentHealth(int currentHP) => health = currentHP;
 
-
+    public bool Heal()
+    {
+        bool used = health == maxHealth ? false : true;
+        if (used)
+        {
+            int healAmount = 40;
+            int v = health + healAmount;
+            if (v >= maxHealth)
+            {
+                health = maxHealth;
+            }
+            else
+            {
+                health += healAmount;
+            }
+            return true;
+        }
+        return false;
+        
+    }
+    public bool RestoreWeaponPower()
+    {
+        int restoreAmount = 20;
+        if(currentWeapon == Weapon.Claws)
+        {
+            return false;
+        }
+        else if(currentWeapon == Weapon.Blood)
+        {
+            if(bloodBarCurrentMP == bloodBarMaxMP)
+            {
+                return false;
+            }
+            else if(bloodBarCurrentMP + restoreAmount >= bloodBarMaxMP)
+            {
+                bloodBarCurrentMP = bloodBarMaxMP;
+            }
+            else
+            {
+                bloodBarCurrentMP += restoreAmount;
+            }
+        }
+        else if (currentWeapon == Weapon.Poison)
+        {
+            if(poisonBarCurrentMP == poisonBarMaxMP)
+            {
+                return false;
+            }
+            else if (poisonBarCurrentMP + restoreAmount >= poisonBarMaxMP)
+            {
+                poisonBarCurrentMP = poisonBarMaxMP;
+            }
+            else
+            {
+                poisonBarCurrentMP += restoreAmount;
+            }
+        }
+        else // ice
+        {
+            if(iceBarCurrentMP == iceBarMaxMP)
+            {
+                return false;
+            }
+            else if (iceBarCurrentMP + restoreAmount >= iceBarMaxMP)
+            {
+                iceBarCurrentMP = iceBarMaxMP;
+            }
+            else
+            {
+                iceBarCurrentMP += restoreAmount;
+            }
+        }
+        return true;
+    }
+    public void SetMaxPoison(int maxpoison)
+    {
+        poisonBarMaxMP = maxpoison;
+    }
+    public void SetMaxIce(int maxice)
+    {
+        iceBarMaxMP = maxice;
+    }
+    public void SetMaxBlood(int maxblood)
+    {
+        bloodBarMaxMP = maxblood;
+    }
 }
 

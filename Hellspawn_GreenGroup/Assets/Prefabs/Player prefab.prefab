@@ -87,6 +87,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a735dfb73937384aacd8ca056f2aefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodBarCurrentMP: 0
+  bloodBarMaxMP: 0
+  iceBarCurrentMP: 0
+  iceBarMaxMP: 0
+  poisonBarCurrentMP: 0
+  poisonBarMaxMP: 0
   health: 0
   jumpForce: 90
   gravityMod: 20
@@ -98,6 +104,21 @@ MonoBehaviour:
   deathSound: {fileID: 0}
   speed: 20
   attackDelay: 1
+  currentWeapon: 0
+--- !u!114 &7425208400670534535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344651576554084959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b5098742764504fadbecb4489a7a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponEquipped: 1
+  resistanceToShowInEditorFoTest: 0
 --- !u!1001 &67489620583482198
 PrefabInstance:
   m_ObjectHideFlags: 0

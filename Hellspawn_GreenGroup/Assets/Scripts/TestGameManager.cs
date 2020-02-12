@@ -12,6 +12,10 @@ public class TestGameManager : MonoBehaviour
     public UpdateUI updateUI;
     public int hp = 100;
     public int maxHP = 100;
+    public int maxBlood = 100;
+    public int maxIce = 100;
+    public int maxPoison= 100;
+
     public int hpRefillCount = 10;
 
     public GameObject BloodOrb;
@@ -29,6 +33,7 @@ public class TestGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         SaveData.Instance.SetLastLevel(SceneManager.GetActiveScene().buildIndex);
 
         gameOver = false;
@@ -45,6 +50,12 @@ public class TestGameManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         
         controller.SetMaxHealth(maxHP);
+        controller.SetMaxBlood(maxBlood);
+        controller.SetMaxIce(maxIce);
+        controller.SetMaxPoison(maxPoison);
+        PlayerResistance = 
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerResistanceExample>();
+
 
     }
 
@@ -65,41 +76,7 @@ public class TestGameManager : MonoBehaviour
 
         // note putting the following in start causes an error
         updateUI.changeHPRefillText(hpRefillCount);
-
-        // here some change weapon methods
-
-        if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            // change whatever else you need before updating UI
-            PlayerResistance.SetWeaponEquipped(1);
-            updateUI.setWeaponToCurrent(ClawsOrb);
-        }
-        else if ((Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2))
-           && SaveData.Instance.GetPlayerHasIceWeapon()
-           )
-        {
-            // change whatever else you need before updating UI
-            PlayerResistance.SetWeaponEquipped(2);
-            updateUI.setWeaponToCurrent(IceOrb);
-        }
-        else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3))
-            && SaveData.Instance.GetPlayerHasPoisonWeapon()
-           )
-        {
-            // change whatever else you need before updating UI
-            PlayerResistance.SetWeaponEquipped(3);
-            updateUI.setWeaponToCurrent(PoisonOrb);
-        }
-        else if ((Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Alpha4))
-            && SaveData.Instance.GetPlayerHasBloodWeapon()
-           )
-        {
-            // change whatever else you need before updating UI
-            PlayerResistance.SetWeaponEquipped(4);
-            updateUI.setWeaponToCurrent(BloodOrb);
-        }
-
-        PlayerInventory playerInventory = 
+        PlayerInventory playerInventory =
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
         int hpPotions = playerInventory.numHealthPotions;
         int mpPotions = playerInventory.numMagicPotions;
@@ -109,6 +86,59 @@ public class TestGameManager : MonoBehaviour
         hp = controller.health;
         updateUI.changeHealthSliderValue(hp, maxHP);
 
+        // here some change weapon methods
+
+        if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            // change whatever else you need before updating UI
+            PlayerResistance.SetWeaponEquipped(1);
+            updateUI.setWeaponToCurrent(ClawsOrb);
+            controller.currentWeapon = Weapon.Claws;
+        }
+        else if ((Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2))
+           && SaveData.Instance.GetPlayerHasIceWeapon()
+           )
+        {
+            // change whatever else you need before updating UI
+            PlayerResistance.SetWeaponEquipped(2);
+            updateUI.setWeaponToCurrent(IceOrb);
+            controller.currentWeapon = Weapon.Ice;
+        }
+        else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3))
+            && SaveData.Instance.GetPlayerHasPoisonWeapon()
+           )
+        {
+            // change whatever else you need before updating UI
+            PlayerResistance.SetWeaponEquipped(3);
+            updateUI.setWeaponToCurrent(PoisonOrb);
+            controller.currentWeapon = Weapon.Poison;
+        }
+        else if ((Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Alpha4))
+            && SaveData.Instance.GetPlayerHasBloodWeapon()
+           )
+        {
+            // change whatever else you need before updating UI
+            PlayerResistance.SetWeaponEquipped(4);
+            updateUI.setWeaponToCurrent(BloodOrb);
+            controller.currentWeapon = Weapon.Blood;
+        }
+
+        if(controller.currentWeapon == Weapon.Claws)
+        {
+            // do no updates to ui
+        }
+        else if(controller.currentWeapon == Weapon.Blood)
+        {
+            updateUI.changeBloodSliderValue(controller.bloodBarCurrentMP, controller.bloodBarMaxMP);
+        }
+        else if (controller.currentWeapon == Weapon.Poison)
+        {
+            updateUI.changePoisonSliderValue(controller.poisonBarCurrentMP, controller.poisonBarMaxMP);
+        }
+        else if (controller.currentWeapon == Weapon.Ice)
+        {
+            updateUI.changeIceSliderValue(controller.iceBarCurrentMP, controller.iceBarMaxMP);
+        }
     }
 
     

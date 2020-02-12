@@ -40,4 +40,24 @@ public class PlayerInventory : MonoBehaviour
     {
         getCounts();
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            bool used = GetComponent<PlayerController>().Heal();
+            if (used)
+            {
+                numHealthPotions--;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            bool used = GetComponent<PlayerController>().RestoreWeaponPower();
+            if(used)
+            {
+                numMagicPotions--;
+            }
+        }
+    }
+
 }
