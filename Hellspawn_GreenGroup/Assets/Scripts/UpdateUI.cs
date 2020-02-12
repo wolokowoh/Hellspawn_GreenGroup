@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class UpdateUI : MonoBehaviour
 {
 
     public GameOverVocals vocals;
+    public AudioSource music;
 
     public GameObject RoseHealthOrb;
     public GameObject RoseHealthOrbSliderObject;
@@ -250,6 +252,7 @@ public class UpdateUI : MonoBehaviour
     
     public IEnumerator GameOver()
     {
+        music.mute = true;
         gameOver.SetActive(true);
 
         AudioSource[] deathClips = vocals.GetDeathClips();

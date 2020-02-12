@@ -1750,6 +1750,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ed66ae8e9c609645ae27eb9c8a1d296, type: 3}
+--- !u!82 &1039775437 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3657937394356422315, guid: 4fd2721cbfbb0884a8c69ecb0fed06cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1493864823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1040715970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 262577173, guid: 969c9c533f13b044aaad5d561db31c51,
@@ -2429,6 +2435,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3657937394356422315, guid: 4fd2721cbfbb0884a8c69ecb0fed06cf,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fd2721cbfbb0884a8c69ecb0fed06cf, type: 3}
 --- !u!114 &1493864824 stripped
@@ -2716,6 +2727,11 @@ PrefabInstance:
       propertyPath: vocals
       value: 
       objectReference: {fileID: 1493864824}
+    - target: {fileID: 1140960539555521929, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1039775437}
     - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_FontData.m_Font
