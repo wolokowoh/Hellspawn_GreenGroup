@@ -42,6 +42,10 @@ public class PauseScript : MonoBehaviour
 
                 LoadMainMenu();
             }
+            else if (Input.GetKeyDown(KeyCode.H))
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
     public void LoadMainMenu()
