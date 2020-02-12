@@ -15,41 +15,14 @@ public class Pickup : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             updateUI.CutOnAndDisplayInteractionText(potionText);
-
+            LoadText(other);
         }
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                bool added = false;
-                string pickupName = "";
-                // do whatever first
-                if (gameObject.CompareTag("MagicPotion"))
-                {
-                    // add the special code here
-                    added = other.GetComponent<PlayerInventory>().addMagicPotion();
-                    pickupName = "Magic Potion";
-                }
-                else if (gameObject.CompareTag("HealthPotion"))
-                {
-                    // add the special code here
-                    added = other.GetComponent<PlayerInventory>().addHealthPotion();
-                    pickupName = "Health Potion";
-                }
-
-
-                if (added)
-                {
-                    updateUI.displayPickupMessage(pickupName + " Obtained");
-                    // maybe add else for life if we do that
-                    updateUI.CutOffInteractionText();
-                    Destroy(parent);
-                }
-                
-            }
+            LoadText(other);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -60,7 +33,38 @@ public class Pickup : MonoBehaviour
         }
 
     }
+    void LoadText(Collider other)
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            bool added = false;
+            string pickupName = "";
+            // do whatever first
+            if (gameObject.CompareTag("MagicPotion"))
+            {
+                // add the special code here
+                added = other.GetComponent<PlayerInventory>().addMagicPotion();
+                pickupName = "Magic Potion";
+            }
+            else if (gameObject.CompareTag("HealthPotion"))
+            {
+                // add the special code here
+                added = other.GetComponent<PlayerInventory>().addHealthPotion();
+                pickupName = "Health Potion";
+            }
 
+
+            if (added)
+            {
+                updateUI.displayPickupMessage(pickupName + " Obtained");
+                // maybe add else for life if we do that
+                updateUI.CutOffInteractionText();
+                Destroy(parent);
+            }
+
+        }
+    
+}
     // Start is called before the first frame update
     void Start()
     {

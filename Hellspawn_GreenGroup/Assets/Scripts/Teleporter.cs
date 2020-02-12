@@ -15,6 +15,8 @@ public class Teleporter : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             updateUI.CutOnAndDisplayInteractionText(MessageToDisplay);
+            Teleport(other);
+
         }
     }
 
@@ -22,15 +24,7 @@ public class Teleporter : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.T) && !alreadyLoading)
-            {
-                alreadyLoading = true;
-                int HPcount = other.gameObject.GetComponent<PlayerInventory>().numHealthPotions;
-                int MPcount = other.gameObject.GetComponent<PlayerInventory>().numMagicPotions;
-                SaveData.Instance.SetHealthPotionCount(HPcount);
-                SaveData.Instance.SetMagicPotionCount(MPcount);
-                StartCoroutine(Loading());
-            }
+            Teleport(other);
         }
         
     }
@@ -39,6 +33,18 @@ public class Teleporter : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             updateUI.CutOffInteractionText();
+        }
+    }
+    void Teleport(Collider other)
+    {
+        if (Input.GetKeyDown(KeyCode.T) && !alreadyLoading)
+        {
+            alreadyLoading = true;
+            int HPcount = other.gameObject.GetComponent<PlayerInventory>().numHealthPotions;
+            int MPcount = other.gameObject.GetComponent<PlayerInventory>().numMagicPotions;
+            SaveData.Instance.SetHealthPotionCount(HPcount);
+            SaveData.Instance.SetMagicPotionCount(MPcount);
+            StartCoroutine(Loading());
         }
     }
     IEnumerator Loading()
