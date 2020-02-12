@@ -44,6 +44,7 @@ public class PauseScript : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.H))
             {
+                Time.timeScale = 1;
                 SceneManager.LoadScene(2);
             }
         }
