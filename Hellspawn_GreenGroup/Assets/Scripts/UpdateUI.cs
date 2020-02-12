@@ -123,7 +123,6 @@ public class UpdateUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         // check other scripts for updates in stats or have the game manager call the public version
     }
 

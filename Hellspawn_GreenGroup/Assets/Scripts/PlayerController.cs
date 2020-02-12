@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityMod;
         playerAudio = GetComponent<AudioSource>();
-        health = TGManager.hp;
+        health = TGManager.maxHP;
     }
 
     void Update()
