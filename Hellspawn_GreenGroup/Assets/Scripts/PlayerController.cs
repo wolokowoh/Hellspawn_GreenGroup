@@ -186,11 +186,15 @@ public class PlayerController : MonoBehaviour
     // you can use this to load current HP from Save later OR INSTANT DEATH.
     public void SetCurrentHealth(int currentHP) => health = currentHP;
 
-    public bool Heal()
+    public bool Heal(int potionCountHealth)
     {
         bool used = health == maxHealth ? false : true;
         if (used)
         {
+            if(potionCountHealth == 0)
+            {
+                return false;
+            }
             int healAmount = 40;
             int v = health + healAmount;
             if (v >= maxHealth)
@@ -206,13 +210,18 @@ public class PlayerController : MonoBehaviour
         return false;
         
     }
-    public bool RestoreWeaponPower()
+    public bool RestoreWeaponPower(int potionCountMagic)
     {
         int restoreAmount = 20;
+        if (potionCountMagic == 0)
+        {
+            return false;
+        }
         if(currentWeapon == Weapon.Claws)
         {
             return false;
         }
+        
         else if(currentWeapon == Weapon.Blood)
         {
             if(bloodBarCurrentMP == bloodBarMaxMP)

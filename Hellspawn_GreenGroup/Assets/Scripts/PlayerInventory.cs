@@ -44,15 +44,16 @@ public class PlayerInventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            bool used = GetComponent<PlayerController>().Heal();
+            bool used = GetComponent<PlayerController>().Heal(numHealthPotions);
             if (used)
             {
+                
                 numHealthPotions--;
             }
         }
         else if (Input.GetKeyDown(KeyCode.R))
         {
-            bool used = GetComponent<PlayerController>().RestoreWeaponPower();
+            bool used = GetComponent<PlayerController>().RestoreWeaponPower(numMagicPotions);
             if(used)
             {
                 numMagicPotions--;
