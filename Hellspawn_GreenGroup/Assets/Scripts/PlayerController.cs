@@ -110,6 +110,10 @@ public class PlayerController : MonoBehaviour
                         playerAnim.Play("LAttackMirror");
                     }
                     StartCoroutine("AttackTimer");
+                    if (enemyInRange && health > 0)
+                    {
+                        Attack();
+                    }
                 }
             }
 
@@ -124,10 +128,7 @@ public class PlayerController : MonoBehaviour
                 playerAnim.SetFloat("InputX", move);
             }
         }
-        if (enemyInRange && health > 0)
-        {
-            Attack();
-        }
+        
     }
 
     void FixedUpdate()
