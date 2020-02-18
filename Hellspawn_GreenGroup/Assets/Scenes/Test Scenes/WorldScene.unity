@@ -3829,8 +3829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27987b6685f1c954c8e6d8215245733b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 100
+  startingHealth: 20
+  currentHealth: 20
   sinkSpeed: 2.5
 --- !u!114 &1680316671
 MonoBehaviour:
@@ -6336,6 +6336,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869701325, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
+      propertyPath: startingHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869701325, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
+      propertyPath: currentHealth
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6688954059273009933, guid: 2bbd3997f6eb5344ebfb3767981bac64,
         type: 3}
