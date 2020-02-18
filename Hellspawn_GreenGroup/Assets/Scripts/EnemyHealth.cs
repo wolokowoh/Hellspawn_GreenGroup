@@ -8,7 +8,6 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
     public float sinkSpeed = 2.5f;
     Animator anim;
-    BoxCollider boxCollider;
     bool isDead;
     bool isSinking;
 
@@ -17,7 +16,6 @@ public class EnemyHealth : MonoBehaviour
      void Awake()
     {
         anim = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider>();
         currentHealth = startingHealth;
     }
 
@@ -46,15 +44,7 @@ public class EnemyHealth : MonoBehaviour
     void Death()
     {
         isDead = true;
-        boxCollider.isTrigger = true;
-        anim.SetTrigger("Dead");
-    }
-
-    public void StartSinking()
-    {
-        GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
-        //GetComponent<Rigidbody>().isKinematic = true;
-        isSinking = true;
-        Destroy(gameObject, 2f);
+        anim.SetTrigger("Death");
+        Destroy(gameObject, 3f);
     }
 }
