@@ -18,11 +18,14 @@ public class PlayerController : MonoBehaviour
     public int poisonBarMaxMP;
 
     private Rigidbody playerRb;
+    GameObject enemy;
+    private EnemyHealth enemyHealth;
+    public bool enemyInRange;
     public int health;
     private int maxHealth;
     public float jumpForce;
     public float gravityMod;
-    private float attackDamage = 5;
+    public int attackDamage = 5;
     public bool isOnGround = true;
     private Animator playerAnim;
     public ParticleSystem attackParticle;
@@ -50,6 +53,8 @@ public class PlayerController : MonoBehaviour
     {
         death = false;
         TGManager = GameObject.FindGameObjectWithTag("TGManager").GetComponent<TestGameManager>();
+        enemyHealth = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyHealth>();
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityMod;
@@ -119,6 +124,10 @@ public class PlayerController : MonoBehaviour
                 playerAnim.SetFloat("InputX", move);
             }
         }
+        if (enemyInRange && health > 0)
+        {
+            Attack();
+        }
     }
 
     void FixedUpdate()
@@ -143,6 +152,18 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+        }
+        if (collision.gameObject == enemy)
+        {
+            enemyInRange = true;
+        }
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject == enemy)
+        {
+            enemyInRange = false;
         }
     }
 
@@ -265,6 +286,15 @@ public class PlayerController : MonoBehaviour
     public void SetMaxBlood(int maxblood)
     {
         bloodBarMaxMP = maxblood;
+    }
+
+    void Attack()
+    {
+        if (health > 0)
+        {
+            playerAnim.Play("Attack");
+            enemyHealth.TakeDamage(attackDamage);
+        }
     }
 }
 
