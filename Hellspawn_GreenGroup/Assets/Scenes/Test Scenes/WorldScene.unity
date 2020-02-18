@@ -3846,7 +3846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackDamage: 5
-  timeBetweenAttacks: 0.5
+  timeBetweenAttacks: 1
   speed: 2
   direction: 0
 --- !u!135 &1680316672
@@ -6337,14 +6337,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 1869701325, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
-      propertyPath: startingHealth
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1869701325, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
-      propertyPath: currentHealth
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 6688954059273009933, guid: 2bbd3997f6eb5344ebfb3767981bac64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6414,6 +6406,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869701324, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869701325, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
+      propertyPath: startingHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869701325, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
+      propertyPath: currentHealth
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bbd3997f6eb5344ebfb3767981bac64, type: 3}
