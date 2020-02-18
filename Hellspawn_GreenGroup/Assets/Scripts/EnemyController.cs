@@ -19,9 +19,8 @@ public class EnemyController : MonoBehaviour
 
     void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        playerHealth = playerController.health;
+        
+
         enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent<Animator>();
 
@@ -55,6 +54,9 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        playerHealth = playerController.health;
         timer += Time.deltaTime;
 
         if (timer >= timeBetweenAttacks)
