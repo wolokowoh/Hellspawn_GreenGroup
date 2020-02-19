@@ -44,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
     void Death()
     {
         isDead = true;
-        anim.SetTrigger("death");
+        anim.SetTrigger("Death");
         Destroy(gameObject, 3f);
     }
 }
