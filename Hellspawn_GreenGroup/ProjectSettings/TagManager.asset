@@ -17,6 +17,7 @@ TagManager:
   - TGManager
   - Music
   - GameOverVocals
+  - Enemy
   layers:
   - Default
   - TransparentFX
