@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     Animator anim;
     bool isDead;
     bool isSinking;
+    Rigidbody rigidbody;
 
 
 
@@ -17,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         currentHealth = startingHealth;
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -44,7 +46,8 @@ public class EnemyHealth : MonoBehaviour
     void Death()
     {
         isDead = true;
-        anim.SetTrigger("death");
-        Destroy(gameObject, 3f);
+        anim.Play("Death");
+        Destroy(gameObject, 1.7f);
+        rigidbody.constraints = RigidbodyConstraints.FreezeAll;
     }
 }
