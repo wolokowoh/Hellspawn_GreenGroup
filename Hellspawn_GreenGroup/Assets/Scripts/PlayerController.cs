@@ -52,9 +52,13 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         death = false;
+        if (GameObject.Find("Enemy") != null)
+        {
+            enemyHealth = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyHealth>();
+            enemy = GameObject.FindGameObjectWithTag("Enemy");
+        }
         TGManager = GameObject.FindGameObjectWithTag("TGManager").GetComponent<TestGameManager>();
-        enemyHealth = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyHealth>();
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
+        
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityMod;
