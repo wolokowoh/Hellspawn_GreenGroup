@@ -51,12 +51,8 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        death = false;
-        if (GameObject.Find("Enemy") != null)
-        {
-            enemyHealth = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyHealth>();
-            enemy = GameObject.FindGameObjectWithTag("Enemy");
-        }
+        death = false;  
+        
         TGManager = GameObject.FindGameObjectWithTag("TGManager").GetComponent<TestGameManager>();
         
         playerRb = GetComponent<Rigidbody>();
@@ -158,15 +154,18 @@ public class PlayerController : MonoBehaviour
         {
             isOnGround = true;
         }
-        if (collision.gameObject == enemy)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
+            enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            enemy = collision.gameObject;
             enemyInRange = true;
+            
         }
     }
 
     void OnCollisionExit(Collision other)
     {
-        if (other.gameObject == enemy)
+        if (other.gameObject.CompareTag("Enemy"))
         {
             enemyInRange = false;
         }
