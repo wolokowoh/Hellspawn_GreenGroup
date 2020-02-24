@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
                         playerAnim.Play("LAttackMirror");
                     }
                     StartCoroutine("AttackTimer");
-                    if (enemyInRange && health > 0)
+                    if (enemyInRange && health > 0 && gameObject.CompareTag("Enemy"))
                     {
                         Attack();
                     }
