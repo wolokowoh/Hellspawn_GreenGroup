@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     bool playerInRange;
     float timer;
     public int AttackDamage = 5;
-    public float timeBetweenAttacks = 0.1f;
+    public float timeBetweenAttacks = 0.5f;
     public float speed = 2.0f;
     public enum directions {Right, Left};
     public directions direction = directions.Right;
