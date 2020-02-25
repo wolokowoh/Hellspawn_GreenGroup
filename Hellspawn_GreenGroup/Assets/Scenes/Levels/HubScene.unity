@@ -283,6 +283,36 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 560f05221f730c24580721ea7d706670, type: 2}
+    - target: {fileID: 2400220515348359943, guid: 08bd9e26279b4654cb86c1db58e06a6c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400220515348359943, guid: 08bd9e26279b4654cb86c1db58e06a6c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400220515100453715, guid: 08bd9e26279b4654cb86c1db58e06a6c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400220515100453715, guid: 08bd9e26279b4654cb86c1db58e06a6c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400220515100453714, guid: 08bd9e26279b4654cb86c1db58e06a6c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.1017976
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400220515100453714, guid: 08bd9e26279b4654cb86c1db58e06a6c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.05089827
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08bd9e26279b4654cb86c1db58e06a6c, type: 3}
 --- !u!1001 &456865685
@@ -2621,13 +2651,28 @@ GameObject:
   - component: {fileID: 1498465396991508459}
   - component: {fileID: 1498465396990214093}
   - component: {fileID: 1498465396989213965}
+  - component: {fileID: 1498465396991402956}
   m_Layer: 0
   m_Name: Plane.016
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1498465396991402956
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498465396991402955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300008, guid: 6d47a798ff5bab5488c68456937884d1, type: 3}
 --- !u!1 &1498465396991402957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,13 +2684,28 @@ GameObject:
   - component: {fileID: 1498465396991508461}
   - component: {fileID: 1498465396990214095}
   - component: {fileID: 1498465396989213967}
+  - component: {fileID: 1498465396991402958}
   m_Layer: 0
   m_Name: Plane.015
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1498465396991402958
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498465396991402957}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300010, guid: 6d47a798ff5bab5488c68456937884d1, type: 3}
 --- !u!1 &1498465396991402965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,13 +2717,28 @@ GameObject:
   - component: {fileID: 1498465396991508469}
   - component: {fileID: 1498465396990214103}
   - component: {fileID: 1498465396989213975}
+  - component: {fileID: 1498465396991402966}
   m_Layer: 0
   m_Name: Plane.000
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1498465396991402966
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498465396991402965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300032, guid: 6d47a798ff5bab5488c68456937884d1, type: 3}
 --- !u!1 &1498465396991402967
 GameObject:
   m_ObjectHideFlags: 0
