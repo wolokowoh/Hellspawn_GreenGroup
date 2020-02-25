@@ -12,10 +12,11 @@ public class EnemyController : MonoBehaviour
     bool playerInRange;
     float timer;
     public int AttackDamage = 5;
-    public float timeBetweenAttacks = 1f;
+    public float timeBetweenAttacks = 0.1f;
     public float speed = 2.0f;
     public enum directions {Right, Left};
     public directions direction = directions.Right;
+    bool delayIsActive;
 
     void Awake()
     {
@@ -66,9 +67,20 @@ public class EnemyController : MonoBehaviour
 
             if (playerInRange && enemyHealth.currentHealth > 0)
             {
-                Attack();
+                if (!delayIsActive)
+                {
+                    Attack();
+                }
             }
         }
+    }
+
+    private IEnumerator AttackDelay()
+    {
+        delayIsActive = true;
+        yield return new WaitForSeconds(1f);
+        delayIsActive = false;
+        
     }
 
     void Attack()
@@ -96,6 +108,7 @@ public class EnemyController : MonoBehaviour
 
             anim.Play("Attack");
             playerController.TakeDamage(AttackDamage);
+            StartCoroutine(AttackDelay());
         }
     }
 
