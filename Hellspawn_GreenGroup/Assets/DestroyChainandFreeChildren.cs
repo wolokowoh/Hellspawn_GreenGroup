@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestroyChainandFreeChildren : MonoBehaviour
 {
     public GameObject[] objectsAttachtoChain;
+    public GameObject[] chainLinks;
     bool destroyed = false;
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,9 +22,14 @@ public class DestroyChainandFreeChildren : MonoBehaviour
 
                 }
             }
-            Rigidbody chainRB = gameObject.GetComponent<Rigidbody>();
-            chainRB.isKinematic = false;
-            chainRB.useGravity = true;
+            for (int i = 0; i < chainLinks.Length; i++)
+            {
+                Rigidbody rb = chainLinks[i].GetComponent<Rigidbody>();
+                rb.isKinematic = false;
+                rb.useGravity = true;
+
+            }
+            gameObject.GetComponent<BoxCollider>().enabled = false;
         }
         
     }
