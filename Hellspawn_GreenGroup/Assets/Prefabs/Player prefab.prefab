@@ -93,17 +93,19 @@ MonoBehaviour:
     type: 3}
   poisonAttack: {fileID: 5564214469939409974, guid: f3732eb01f0646740af1597282284204,
     type: 3}
-  bloodBarCurrentMP: 0
-  bloodBarMaxMP: 0
-  iceBarCurrentMP: 0
-  iceBarMaxMP: 0
+  bloodBarCurrentMP: 100
+  bloodBarMaxMP: 100
+  bloodCastCost: 2
+  iceBarCurrentMP: 100
+  iceBarMaxMP: 100
+  iceCastCost: 5
   poisonBarCurrentMP: 0
-  poisonBarMaxMP: 0
+  poisonBarMaxMP: 100
+  poisonCastCost: 25
   enemyInRange: 0
   health: 0
   jumpForce: 90
   gravityMod: 20
-  attackDamage: 5
   isOnGround: 1
   attackParticle: {fileID: 0}
   runningParticle: {fileID: 0}

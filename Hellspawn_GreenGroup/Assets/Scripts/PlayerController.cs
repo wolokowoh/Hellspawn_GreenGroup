@@ -15,10 +15,13 @@ public class PlayerController : MonoBehaviour
     public GameObject poisonAttack;
     public int bloodBarCurrentMP;
     public int bloodBarMaxMP;
+    public int bloodCastCost;
     public int iceBarCurrentMP;
     public int iceBarMaxMP;
+    public int iceCastCost;
     public int poisonBarCurrentMP;
     public int poisonBarMaxMP;
+    public int poisonCastCost;
 
     private Rigidbody playerRb;
     GameObject enemy;
@@ -64,6 +67,9 @@ public class PlayerController : MonoBehaviour
         Physics.gravity *= gravityMod;
         playerAudio = GetComponent<AudioSource>();
         health = TGManager.maxHP;
+        iceBarCurrentMP = iceBarMaxMP;
+        poisonBarCurrentMP = poisonBarMaxMP;
+        bloodBarCurrentMP = bloodBarMaxMP;
     }
 
     void Update()
@@ -124,60 +130,86 @@ public class PlayerController : MonoBehaviour
                     }
                     else if ((currentWeapon == Weapon.Ice))
                     {
-                        StartCoroutine("AttackTimer");
-                        Vector3 position = transform.position;
-                        if (facingRight)
+                        if(iceBarCurrentMP > 0)
                         {
-                            position.x += 5;
+                            if (iceCastCost <= iceBarCurrentMP)
+                            {
+                                iceBarCurrentMP -= iceCastCost;
+                                StartCoroutine("AttackTimer");
+                                Vector3 position = transform.position;
+                                if (facingRight)
+                                {
+                                    position.x += 5;
+                                }
+                                else
+                                {
+                                    position.x -= 2;
+                                }
+                                GameObject iceShard = Instantiate(iceAttack, position,
+                                    iceAttack.transform.rotation);
+                                Rigidbody attack = iceShard.transform.GetChild(0).GetComponent<Rigidbody>();
+                                float forceX = 120f;
+
+                                attack.AddForce(transform.forward * forceX);
+                            }
                         }
-                        else
-                        {
-                            position.x -= 2;
-                        }
-                        GameObject iceShard = Instantiate(iceAttack, position, 
-                            iceAttack.transform.rotation);
-                        Rigidbody attack = iceShard.transform.GetChild(0).GetComponent<Rigidbody>();
-                        float forceX = 120f;
                         
-                        attack.AddForce(transform.forward * forceX);
+                        
                     }
                     else if ((currentWeapon == Weapon.Blood))
                     {
-                        StartCoroutine("AttackTimer");
-                        Vector3 position = transform.position;
-                        if (facingRight)
+                        if( bloodBarCurrentMP > 0)
                         {
-                            position.x += 5;
-                        }
-                        else
-                        {
-                            position.x -= 2;
-                        }
-                        GameObject bloodShard = Instantiate(bloodAttack, position,
-                            bloodAttack.transform.rotation);
-                        Rigidbody attack = bloodShard.transform.GetChild(0).GetComponent<Rigidbody>();
-                        float forceX = 120f;
+                            if (bloodCastCost <= bloodBarCurrentMP)
+                            {
+                                bloodBarCurrentMP -= bloodCastCost;
+                                StartCoroutine("AttackTimer");
+                                Vector3 position = transform.position;
+                                if (facingRight)
+                                {
+                                    position.x += 5;
+                                }
+                                else
+                                {
+                                    position.x -= 2;
+                                }
+                                GameObject bloodShard = Instantiate(bloodAttack, position,
+                                    bloodAttack.transform.rotation);
+                                Rigidbody attack = bloodShard.transform.GetChild(0).GetComponent<Rigidbody>();
+                                float forceX = 120f;
 
-                        attack.AddForce(transform.forward * forceX);
+                                attack.AddForce(transform.forward * forceX);
+                            }
+                        }
+                        
+                        
                     }
                     else // POISON
                     {
-                        StartCoroutine("AttackTimer");
-                        Vector3 position = transform.position;
-                        if (facingRight)
+                        if (poisonBarCurrentMP > 0)
                         {
-                            position.x += 5;
-                        }
-                        else
-                        {
-                            position.x -= 2;
-                        }
-                        GameObject poisonShard = Instantiate(poisonAttack, position,
-                            poisonAttack.transform.rotation);
-                        Rigidbody attack = poisonShard.transform.GetChild(0).GetComponent<Rigidbody>();
-                        float forceX = 120f;
+                            if (poisonCastCost <= poisonBarCurrentMP)
+                            {
+                                poisonBarCurrentMP -= poisonCastCost;
+                                StartCoroutine("AttackTimer");
+                                Vector3 position = transform.position;
+                                if (facingRight)
+                                {
+                                    position.x += 5;
+                                }
+                                else
+                                {
+                                    position.x -= 2;
+                                }
+                                GameObject poisonShard = Instantiate(poisonAttack, position,
+                                    poisonAttack.transform.rotation);
+                                Rigidbody attack = poisonShard.transform.GetChild(0).GetComponent<Rigidbody>();
+                                float forceX = 120f;
 
-                        attack.AddForce(transform.forward * forceX);
+                                attack.AddForce(transform.forward * forceX);
+                            }
+                        }
+                        
                     }
                 }
             }
