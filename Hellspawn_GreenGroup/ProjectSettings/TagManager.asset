@@ -22,6 +22,10 @@ TagManager:
   - Poison
   - Blood
   - EnemyWeapon
+  - WardenBossBar
+  - BloodBossBar
+  - PoisonBossBar
+  - IceBossBar
   layers:
   - Default
   - TransparentFX
