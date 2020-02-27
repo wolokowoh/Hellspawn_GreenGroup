@@ -10,6 +10,9 @@ public enum Weapon
 }
 public class PlayerController : MonoBehaviour
 {
+    public GameObject bloodAttack;
+    public GameObject iceAttack;
+    public GameObject poisonAttack;
     public int bloodBarCurrentMP;
     public int bloodBarMaxMP;
     public int iceBarCurrentMP;
@@ -39,6 +42,8 @@ public class PlayerController : MonoBehaviour
     private TestGameManager TGManager;
     private bool death;
     public Weapon currentWeapon = Weapon.Claws;
+
+    bool facingRight = true;
 
     private void Awake()
     {
@@ -89,30 +94,91 @@ public class PlayerController : MonoBehaviour
             {
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 transform.eulerAngles = new Vector3(0, -90, 0);
+                facingRight = false;
             }
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 transform.position += Vector3.right * speed * Time.deltaTime;
                 transform.eulerAngles = new Vector3(0, 90, 0);
+                facingRight = true;
             }
             if (Input.GetKey(KeyCode.G))
             {
                 if (isAttacking == false)
                 {
-                    isAttacking = true;
-                    int rand = Random.Range(1, 3);
-                    if (rand == 1)
+                    if (currentWeapon == Weapon.Claws)
                     {
-                        playerAnim.Play("LAttack");
+                        int rand = Random.Range(1, 3);
+                        if (rand == 1)
+                        {
+                            playerAnim.Play("LAttack");
+                        }
+                        else if (rand == 2)
+                        {
+                            playerAnim.Play("LAttackMirror");
+                        }
+                        StartCoroutine("AttackTimer");
+                        if (enemyInRange && health > 0 && enemy)
+                        {
+                            Attack();
+                        }
                     }
-                    else if (rand == 2)
+                    else if ((currentWeapon == Weapon.Ice))
                     {
-                        playerAnim.Play("LAttackMirror");
+                        StartCoroutine("AttackTimer");
+                        Vector3 position = transform.position;
+                        if (facingRight)
+                        {
+                            position.x += 5;
+                        }
+                        else
+                        {
+                            position.x -= 2;
+                        }
+                        GameObject iceShard = Instantiate(iceAttack, position, 
+                            iceAttack.transform.rotation);
+                        Rigidbody attack = iceShard.transform.GetChild(0).GetComponent<Rigidbody>();
+                        float forceX = 120f;
+                        
+                        attack.AddForce(transform.forward * forceX);
                     }
-                    StartCoroutine("AttackTimer");
-                    if (enemyInRange && health > 0 && enemy)
+                    else if ((currentWeapon == Weapon.Blood))
                     {
-                        Attack();
+                        StartCoroutine("AttackTimer");
+                        Vector3 position = transform.position;
+                        if (facingRight)
+                        {
+                            position.x += 5;
+                        }
+                        else
+                        {
+                            position.x -= 2;
+                        }
+                        GameObject bloodShard = Instantiate(bloodAttack, position,
+                            bloodAttack.transform.rotation);
+                        Rigidbody attack = bloodShard.transform.GetChild(0).GetComponent<Rigidbody>();
+                        float forceX = 120f;
+
+                        attack.AddForce(transform.forward * forceX);
+                    }
+                    else // POISON
+                    {
+                        StartCoroutine("AttackTimer");
+                        Vector3 position = transform.position;
+                        if (facingRight)
+                        {
+                            position.x += 5;
+                        }
+                        else
+                        {
+                            position.x -= 2;
+                        }
+                        GameObject poisonShard = Instantiate(poisonAttack, position,
+                            poisonAttack.transform.rotation);
+                        Rigidbody attack = poisonShard.transform.GetChild(0).GetComponent<Rigidbody>();
+                        float forceX = 120f;
+
+                        attack.AddForce(transform.forward * forceX);
                     }
                 }
             }
@@ -173,9 +239,9 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator AttackTimer()
     {
+        isAttacking = true;
         yield return new WaitForSeconds(attackDelay);
         isAttacking = false;
-        yield return null;
     }
 
     public void TakeDamage (int amount)

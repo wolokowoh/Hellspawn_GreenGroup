@@ -11,6 +11,19 @@ public class FleshLerp : MonoBehaviour
     private bool coroutineStarted;
 
     Renderer rend;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Poison"))
+        {
+            if (!rotting)
+            {
+                rotting = true;
+            }
+            Destroy(collision.gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

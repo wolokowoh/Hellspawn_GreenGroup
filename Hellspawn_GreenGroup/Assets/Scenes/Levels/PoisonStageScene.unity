@@ -1244,6 +1244,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!1 &501706610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 619355539, guid: 969c9c533f13b044aaad5d561db31c51,
+    type: 3}
+  m_PrefabInstance: {fileID: 1609250371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &501706612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501706610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a562cda425ae44caba2c877c122051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedFloor: {fileID: 1944501655}
 --- !u!1 &512127965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4335,27 +4354,6 @@ PrefabInstance:
       propertyPath: music
       value: 
       objectReference: {fileID: 1039775437}
-    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f085511bc2aa2cc458bc3a146af9db81,
-        type: 3}
-    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.45669866
-      objectReference: {fileID: 0}
-    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.754717
-      objectReference: {fileID: 0}
-    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.3097188
-      objectReference: {fileID: 0}
     - target: {fileID: 675211698, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4381,6 +4379,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: f085511bc2aa2cc458bc3a146af9db81,
+        type: 3}
+    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.45669866
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3097188
       objectReference: {fileID: 0}
     - target: {fileID: 5292853598023105512, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
@@ -4921,7 +4940,7 @@ PrefabInstance:
     - target: {fileID: 619355542, guid: 969c9c533f13b044aaad5d561db31c51, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 560f05221f730c24580721ea7d706670, type: 2}
+      objectReference: {fileID: 2100000, guid: 6a045a55fd64f004f99f1434d22c7b4b, type: 2}
     - target: {fileID: 1040317142, guid: 969c9c533f13b044aaad5d561db31c51, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5498,6 +5517,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1754627288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7886309928586154209, guid: 969c9c533f13b044aaad5d561db31c51,
+    type: 3}
+  m_PrefabInstance: {fileID: 1609250371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1754627289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754627288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e1663652f7ab44d8a925e3270d711c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1763992234 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 972992618772041897, guid: 969c9c533f13b044aaad5d561db31c51,
@@ -5990,7 +6027,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 560f05221f730c24580721ea7d706670, type: 2}
+  - {fileID: 2100000, guid: 6a045a55fd64f004f99f1434d22c7b4b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

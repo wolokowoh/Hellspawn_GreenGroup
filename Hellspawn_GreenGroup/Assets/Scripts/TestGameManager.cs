@@ -35,6 +35,11 @@ public class TestGameManager : MonoBehaviour
     {
 
         SaveData.Instance.SetLastLevel(SceneManager.GetActiveScene().buildIndex);
+        // comment these out
+        SaveData.Instance.SetPlayerHasBloodWeapon(true);
+        SaveData.Instance.SetPlayerHasIceWeapon(true);
+        SaveData.Instance.SetPlayerHasPoisonWeapon(true);
+
 
         gameOver = false;
         UIGameOverTrigger = false;

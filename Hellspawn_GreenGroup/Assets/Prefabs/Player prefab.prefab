@@ -87,6 +87,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a735dfb73937384aacd8ca056f2aefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodAttack: {fileID: 2259462902957952190, guid: d8ea71e59142f0345b5ba04b47679eba,
+    type: 3}
+  iceAttack: {fileID: 1972943372355249254, guid: 79270a8e11ec39b46832171866c04c00,
+    type: 3}
+  poisonAttack: {fileID: 5564214469939409974, guid: f3732eb01f0646740af1597282284204,
+    type: 3}
   bloodBarCurrentMP: 0
   bloodBarMaxMP: 0
   iceBarCurrentMP: 0
