@@ -30,7 +30,16 @@ public class DestroyChainandFreeChildren : MonoBehaviour
 
             }
             gameObject.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(DestroyedChain());
         }
         
     }
+
+    IEnumerator DestroyedChain()
+    {
+        yield return new WaitForSeconds(3f);
+        gameObject.SetActive(false);
+        
+    }
+
 }
