@@ -10,6 +10,7 @@ public class BossTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             boss.cutOnBar();
+            Destroy(gameObject);
         }
     }
 }
