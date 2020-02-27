@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyHealthExample : MonoBehaviour
 {
     ResistancesStructure enemyResistancesExample = new ResistancesStructure();
-    public int BloodResistance, BruteResistance, BurnResistance,
-        FrostResistance, PoisonResistance, ShockResistance;
+    public int BloodResistance, BruteResistance,
+        FrostResistance, PoisonResistance;
 
 
     // Start is called before the first frame update
@@ -14,14 +14,15 @@ public class EnemyHealthExample : MonoBehaviour
     {
         enemyResistancesExample.SetBloodResistance(BloodResistance);
         enemyResistancesExample.SetBruteResistance(BruteResistance);
-        enemyResistancesExample.SetBurnResistance(BurnResistance);
         enemyResistancesExample.SetFrostResistance(FrostResistance);
         enemyResistancesExample.SetPoisonResistance(PoisonResistance);
-        enemyResistancesExample.SetShockResistance(ShockResistance);
 
         // when enemy damaged you can pass whole structure if necessary to a damage calculator
     }
-
+    public ResistancesStructure getResistances()
+    {
+        return enemyResistancesExample;
+    }
     // Update is called once per frame
     void Update()
     {

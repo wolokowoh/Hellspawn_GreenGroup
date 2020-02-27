@@ -21,6 +21,7 @@ TagManager:
   - Ice
   - Poison
   - Blood
+  - EnemyWeapon
   layers:
   - Default
   - TransparentFX

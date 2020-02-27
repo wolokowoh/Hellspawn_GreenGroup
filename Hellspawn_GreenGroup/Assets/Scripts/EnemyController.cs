@@ -9,10 +9,13 @@ public class EnemyController : MonoBehaviour
     private float playerHealth;
     PlayerController playerController;
     EnemyHealth enemyHealth;
-    bool playerInRange;
+    public bool playerInRange;
+    public bool playerInAttackRange;
+    public bool playerTouching;
     float timer;
     public int AttackDamage = 5;
-    public float timeBetweenAttacks = 0.1f;
+    public float attackAnimationLength = 0.5f;
+    public float howLongToWaitBeforeAttackAnimDoesDamage = 1f;
     public float speed = 2.0f;
     public enum directions {Right, Left};
     public directions direction = directions.Right;
@@ -25,7 +28,7 @@ public class EnemyController : MonoBehaviour
         enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent<Animator>();
 
-        timer = timeBetweenAttacks;
+        timer = attackAnimationLength;
     }
 
     void OnTriggerEnter(Collider other)
@@ -34,24 +37,33 @@ public class EnemyController : MonoBehaviour
         {
             SwitchDirection();
         }
-    }
-
-    void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject == player)
+        else if (other.gameObject.CompareTag("Player"))
         {
             playerInRange = true;
         }
     }
-
-    void OnCollisionExit(Collision other)
+    private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject.CompareTag("Player"))
         {
             playerInRange = false;
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerTouching = true;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerTouching = false;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -59,8 +71,11 @@ public class EnemyController : MonoBehaviour
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         playerHealth = playerController.health;
         timer += Time.deltaTime;
-
-        if (timer >= timeBetweenAttacks)
+        if (playerInRange)
+        {
+            TurnToPlayer();
+        }
+        if (timer >= attackAnimationLength)
         {
             // Attack delay has passed.
             transform.Translate(0, 0, 1 * Time.deltaTime * speed);
@@ -74,11 +89,32 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
-
+    private void TurnToPlayer()
+    {
+        if (playerHealth > 0)
+        {
+            if (direction == directions.Right)
+            {
+                if (transform.position.x > player.transform.position.x)
+                {
+                    SwitchDirection();
+                }
+            }
+            else if (direction == directions.Left)
+            {
+                if (transform.position.x < player.transform.position.x)
+                {
+                    SwitchDirection();
+                }
+            }
+        }
+    }
     private IEnumerator AttackDelay()
     {
         delayIsActive = true;
-        yield return new WaitForSeconds(1f);
+        float delay = 1f;
+        delay += attackAnimationLength;
+        yield return new WaitForSeconds(delay);
         delayIsActive = false;
         
     }
@@ -91,27 +127,35 @@ public class EnemyController : MonoBehaviour
 
         if (playerHealth > 0)
         {
-            if (direction == directions.Right)
-            {
-               if (transform.position.x > player.transform.position.x)
-                {
-                    SwitchDirection();
-                }
-            }
-            else if (direction == directions.Left)
-            {
-                if (transform.position.x < player.transform.position.x)
-                {
-                    SwitchDirection();
-                }
-            }
-
             anim.Play("Attack");
-            playerController.TakeDamage(AttackDamage);
+            StartCoroutine(DealDamage());
             StartCoroutine(AttackDelay());
         }
+        
+        
     }
+    IEnumerator DealDamage()
+    {
+        bool damageAlreadyDone = false;
+        float animLength = attackAnimationLength - howLongToWaitBeforeAttackAnimDoesDamage;
+        yield return new WaitForSeconds(howLongToWaitBeforeAttackAnimDoesDamage);
+        float timeToWait = animLength / (0.05f);
+        for (float i = 0; i < timeToWait; i+=.05f)
+        {
+            yield return new WaitForSeconds(.05f);
+            if (playerTouching && !damageAlreadyDone)
+            {
+                playerController.TakeDamage(AttackDamage);
+                damageAlreadyDone = true;
 
+            }
+            else if(damageAlreadyDone)
+            {
+                break;
+            }
+        }
+        
+    }
     void SwitchDirection()
     {
         if (direction == directions.Right)

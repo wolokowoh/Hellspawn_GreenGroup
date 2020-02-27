@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
     private int maxHealth;
     public float jumpForce;
     public float gravityMod;
-    public int attackDamage = 5;
     public bool isOnGround = true;
     private Animator playerAnim;
     public ParticleSystem attackParticle;
@@ -363,7 +362,7 @@ public class PlayerController : MonoBehaviour
         if (health > 0)
         {
             playerAnim.Play("Attack");
-            enemyHealth.TakeDamage(attackDamage);
+            enemyHealth.TakeDamage("C");
         }
     }
 }
