@@ -18,6 +18,9 @@ TagManager:
   - Music
   - GameOverVocals
   - Enemy
+  - Ice
+  - Poison
+  - Blood
   layers:
   - Default
   - TransparentFX
