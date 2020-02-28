@@ -1084,6 +1084,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5039039317331310812, guid: a58f7d45169c092488ec0673930394ac,
+        type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 2064122792}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a58f7d45169c092488ec0673930394ac, type: 3}
 --- !u!1 &481685129 stripped
@@ -3082,7 +3087,7 @@ PrefabInstance:
     - target: {fileID: 1140960539555521928, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1140960539555521928, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
@@ -5407,6 +5412,67 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &2064122792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064122789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf1317b4fddb0b49833195af6aa287c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BossFightTime: 0
+  bossCode: 
+--- !u!114 &2064122793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064122789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27987b6685f1c954c8e6d8215245733b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWarden: 0
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  BloodDamage: 0
+  PoisonDamage: 0
+  ClawsDamage: 0
+  IceDamage: 0
+  poisonLength: 0
+  startingBloodHealth: 100
+  currentBloodHealth: 0
+  startingPoisonHealth: 100
+  currentPoisonHealth: 0
+  startingIceHealth: 100
+  currentIceHealth: 0
+--- !u!114 &2064122794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064122789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc13a1ffd958254418705ec6a76ad260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInRange: 0
+  playerInAttackRange: 0
+  playerTouching: 0
+  AttackDamage: 5
+  attackAnimationLength: 0.5
+  howLongToWaitBeforeAttackAnimDoesDamage: 1
+  speed: 2
+  direction: 0
 --- !u!1 &2082591775
 GameObject:
   m_ObjectHideFlags: 0
