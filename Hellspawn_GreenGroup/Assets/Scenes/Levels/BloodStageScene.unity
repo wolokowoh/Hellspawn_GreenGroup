@@ -1443,7 +1443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 496326, guid: 96fbdae576d296c46a5a7198cf78f24a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 496326, guid: 96fbdae576d296c46a5a7198cf78f24a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2170,7 +2170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BossFightTime: 0
-  bossCode: 
+  bossCode: B
 --- !u!114 &1022567422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,14 +2184,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWarden: 0
-  startingHealth: 100
-  currentHealth: 0
+  startingHealth: 150
+  currentHealth: 150
   sinkSpeed: 2.5
-  BloodDamage: 0
-  PoisonDamage: 0
-  ClawsDamage: 0
-  IceDamage: 0
-  poisonLength: 0
+  BloodDamage: 5
+  PoisonDamage: 1
+  ClawsDamage: 10
+  IceDamage: 10
+  poisonLength: 5
   startingBloodHealth: 100
   currentBloodHealth: 0
   startingPoisonHealth: 100
@@ -2214,7 +2214,7 @@ MonoBehaviour:
   playerInRange: 0
   playerInAttackRange: 0
   playerTouching: 0
-  AttackDamage: 5
+  AttackDamage: 15
   attackAnimationLength: 0.5
   howLongToWaitBeforeAttackAnimDoesDamage: 1
   speed: 2
@@ -4501,6 +4501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BossTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5039039317331310813, guid: a58f7d45169c092488ec0673930394ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5039039317331310808, guid: a58f7d45169c092488ec0673930394ac,
         type: 3}
