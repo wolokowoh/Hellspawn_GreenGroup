@@ -1299,6 +1299,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: -5716681864270162303, guid: 8ba535c70bbcf7b46b0cba1188faae47,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba535c70bbcf7b46b0cba1188faae47, type: 3}
 --- !u!1 &602702965 stripped
@@ -5515,6 +5520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc13a1ffd958254418705ec6a76ad260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPoisonous: 0
   playerInRange: 0
   playerInAttackRange: 0
   playerTouching: 0
@@ -5523,6 +5529,25 @@ MonoBehaviour:
   howLongToWaitBeforeAttackAnimDoesDamage: 1
   speed: 2
   direction: 0
+--- !u!95 &2064122795
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064122789}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06f471e10a67eb14884e5d4c8a7fb2ce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2082591775
 GameObject:
   m_ObjectHideFlags: 0
