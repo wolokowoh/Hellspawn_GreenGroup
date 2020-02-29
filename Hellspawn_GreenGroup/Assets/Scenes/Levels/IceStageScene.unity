@@ -352,6 +352,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 3327792193139875843, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: AttackDamage
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: BloodDamage
@@ -1038,6 +1043,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327792193139875843, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: AttackDamage
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -2066,6 +2076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327792193139875843, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: AttackDamage
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -5818,6 +5833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327792193139875843, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: AttackDamage
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
