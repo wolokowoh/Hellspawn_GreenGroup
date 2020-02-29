@@ -381,34 +381,34 @@ public class UpdateUI : MonoBehaviour
 
     public void changeIceBossHealthSliderValue(int bossCurrentHP, int bossMaxHP)
     {
-        float newValue = bossCurrentHP / bossMaxHP;
+        float newValue = ((float)(bossCurrentHP)) / ((float)(bossMaxHP));
         iceBossHealthSlider.value = newValue;
     }
     public void changePoisonBossHealthSliderValue(int bossCurrentHP, int bossMaxHP)
     {
-        float newValue = bossCurrentHP / bossMaxHP;
+        float newValue = ((float)(bossCurrentHP)) / ((float)(bossMaxHP));
         poisonBossHealthSlider.value = newValue;
     }
     public void changeBloodBossHealthSliderValue(int bossCurrentHP, int bossMaxHP)
     {
-        float newValue = bossCurrentHP / bossMaxHP;
+        float newValue = ((float)(bossCurrentHP)) / ((float)(bossMaxHP));
         bloodBossHealthSlider.value = newValue;
     }
     // for the warden we need three max hps and three current ones. Once one runs out whe swap the bar
     // just use an if to check its zero in order
     public void changeWardenBloodSliderValue(int bossCurrentBloodHP, int bossBloodMaxHP)
     {
-        float newValue = bossCurrentBloodHP / bossBloodMaxHP;
+        float newValue = ((float)(bossCurrentBloodHP))/ ((float)(bossBloodMaxHP));
         theWardenBloodSlider.value = newValue;
     }
     public void changeWardenPoisonSliderValue(int bossCurrentPoisonHP, int bossPoisonMaxHP)
     {
-        float newValue = bossCurrentPoisonHP / bossPoisonMaxHP;
+        float newValue = ((float)(bossCurrentPoisonHP)) / ((float)(bossPoisonMaxHP));
         theWardenPoisonSlider.value = newValue;
     }
     public void changeWardenIceSliderValue(int bossCurrentIceHP, int bossIceMaxHP)
     {
-        float newValue = bossCurrentIceHP / bossIceMaxHP;
+        float newValue = ((float)(bossCurrentIceHP)) / ((float)(bossIceMaxHP));
         theWardenIceSlider.value = newValue;
     }
 }
