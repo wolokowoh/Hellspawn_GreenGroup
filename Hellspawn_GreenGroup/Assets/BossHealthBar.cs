@@ -11,33 +11,22 @@ public class BossHealthBar : MonoBehaviour
     public string bossCode;
     public void cutOnBar()
     {
+        updateUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<UpdateUI>();
         if (bossCode == "W")
         {
-            if (!GameObject.FindGameObjectWithTag("WardenBossBar").activeInHierarchy)
-            {
-                GameObject.FindGameObjectWithTag("WardenBossBar").SetActive(true);
-            }
+            updateUI.cutOnWardenBossHealth();
         }
         else if (bossCode == "I")
         {
-            if (!GameObject.FindGameObjectWithTag("IceBossBar").activeInHierarchy)
-            {
-                GameObject.FindGameObjectWithTag("IceBossBar").SetActive(true);
-            }
+            updateUI.cutOnIceBossHealth();
         }
         else if (bossCode == "B")
         {
-            if (!GameObject.FindGameObjectWithTag("BloodBossBar").activeInHierarchy)
-            {
-                GameObject.FindGameObjectWithTag("BloodBossBar").SetActive(true);
-            }
+            updateUI.cutOnBloodBossHealth();
         }
         else // p for poison
         {
-            if (!GameObject.FindGameObjectWithTag("PoisonBossBar").activeInHierarchy)
-            {
-                GameObject.FindGameObjectWithTag("PoisonBossBar").SetActive(true);
-            }
+            updateUI.cutOnPoisonBossHealth();
         }
         BossFightTime = true;
     }
