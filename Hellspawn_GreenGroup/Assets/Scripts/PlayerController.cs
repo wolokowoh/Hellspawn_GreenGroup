@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     public int poisonCastCost;
     private bool poisonCoroutine = false;
     private Rigidbody playerRb;
-    GameObject enemy;
+    EnemyController enemy;
     private EnemyHealth enemyHealth;
     public bool enemyInRange;
     public int health;
@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
                             playerAnim.Play("LAttackMirror");
                         }
                         StartCoroutine("AttackTimer");
-                        if (enemyInRange && health > 0 && enemy)
+                        if (health > 0)
                         {
                             Attack();
                         }
@@ -276,10 +276,10 @@ public class PlayerController : MonoBehaviour
         {
             isOnGround = true;
         }
-        if (collision.gameObject.CompareTag("Enemy"))
+        else if (collision.gameObject.CompareTag("Enemy"))
         {
             enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-            enemy = collision.gameObject;
+            enemy = collision.gameObject.GetComponent<EnemyController>();
             enemyInRange = true;
             
         }
@@ -418,8 +418,16 @@ public class PlayerController : MonoBehaviour
     {
         if (health > 0)
         {
-            playerAnim.Play("Attack");
-            enemyHealth.TakeDamage("C");
+            if(enemy != null)
+            {
+                bool touching = enemy.playerTouching;
+                if (touching)
+                {
+                    enemyHealth.TakeDamage("C");
+                }
+            }
+            
+            
         }
     }
 }
