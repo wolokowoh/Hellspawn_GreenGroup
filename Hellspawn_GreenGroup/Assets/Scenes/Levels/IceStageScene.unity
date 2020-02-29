@@ -280,7 +280,7 @@ PrefabInstance:
     - target: {fileID: 7484426334219450794, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_Name
-      value: EnemySkeleton (2)
+      value: IcySkeleton (2)
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -351,6 +351,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: BloodDamage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: IceDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: poisonLength
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -952,7 +967,7 @@ PrefabInstance:
     - target: {fileID: 7484426334219450794, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_Name
-      value: EnemySkeleton (3)
+      value: IcySkeleton (3)
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -1023,6 +1038,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: poisonLength
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: IceDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: BloodDamage
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -1965,7 +1995,7 @@ PrefabInstance:
     - target: {fileID: 7484426334219450794, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_Name
-      value: EnemySkeleton
+      value: IcySkeleton
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -2036,6 +2066,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: BloodDamage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: PoisonDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: IceDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: poisonLength
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -5697,7 +5747,7 @@ PrefabInstance:
     - target: {fileID: 7484426334219450794, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_Name
-      value: EnemySkeleton (5)
+      value: IcySkeleton (5)
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -5768,6 +5818,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: BloodDamage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: poisonLength
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: IceDamage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
