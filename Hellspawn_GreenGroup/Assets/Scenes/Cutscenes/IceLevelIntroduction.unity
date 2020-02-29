@@ -308,7 +308,8 @@ MonoBehaviour:
   textToDisplay: {fileID: 393421251690777582}
   defaultCharacter: 1
   AbraxasColor: {r: 0.33132324, g: 1, b: 0.2783019, a: 1}
-  OtherPersonColor: {r: 1, g: 0, b: 0, a: 1}
+  OtherPersonColor: {r: 0, g: 0.96275425, b: 1, a: 1}
+  printSpeed: 0.01
   routineRunning: 0
 --- !u!1 &759595256
 GameObject:

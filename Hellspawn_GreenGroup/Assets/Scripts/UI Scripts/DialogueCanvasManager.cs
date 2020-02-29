@@ -11,7 +11,7 @@ public class DialogueCanvasManager : MonoBehaviour
     public Color AbraxasColor;
     public Color OtherPersonColor;
     private Color currentColor;
-
+    public float printSpeed = 0.01f;
     public bool routineRunning;
 
     // Start is called before the first frame update
@@ -41,7 +41,7 @@ public class DialogueCanvasManager : MonoBehaviour
         }
         textToDisplay.color = currentColor;
         textToDisplay.text = "";
-        StartCoroutine(MessagePrint(.05f, firstMessage));
+        StartCoroutine(MessagePrint(printSpeed, firstMessage));
 
     }
     public void changeMessageColor()
@@ -64,7 +64,7 @@ public class DialogueCanvasManager : MonoBehaviour
         {
             changeMessageColor();
         }
-        StartCoroutine(MessagePrint(.05f, message));
+        StartCoroutine(MessagePrint(printSpeed, message));
     }
     public void FinishMessage(List<string> message) // call this if interrupted coroutine
     {

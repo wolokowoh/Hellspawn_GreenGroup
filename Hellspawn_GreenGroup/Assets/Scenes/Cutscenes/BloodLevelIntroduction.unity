@@ -309,6 +309,7 @@ MonoBehaviour:
   defaultCharacter: 1
   AbraxasColor: {r: 0.33132324, g: 1, b: 0.2783019, a: 1}
   OtherPersonColor: {r: 1, g: 0, b: 0, a: 1}
+  printSpeed: 0.01
   routineRunning: 0
 --- !u!1 &759595256
 GameObject:
@@ -940,7 +941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3986994, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.96129084, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -958,11 +959,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Double Tap if Playing Message
+  m_Text: '
 
-    Press T to Display Next Message
+    Press T to Display Continue
 
-    Press S to Skip Scene'
+'
 --- !u!222 &1727232381
 CanvasRenderer:
   m_ObjectHideFlags: 0
