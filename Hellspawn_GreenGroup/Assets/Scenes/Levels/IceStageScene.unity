@@ -5914,7 +5914,7 @@ PrefabInstance:
     - target: {fileID: 6568890978797905713, guid: 6572eaa94fe31fb41aa5ee4671f5736b,
         type: 3}
       propertyPath: MessageToDisplay
-      value: Press T to Return to "Hellfire and Brimstone"
+      value: Press T to Return to "Cavern of Sorrows"
       objectReference: {fileID: 0}
     - target: {fileID: 6568890978797905713, guid: 6572eaa94fe31fb41aa5ee4671f5736b,
         type: 3}

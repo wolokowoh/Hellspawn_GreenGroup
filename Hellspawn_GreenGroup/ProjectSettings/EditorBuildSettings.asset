@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/DungeonScene.unity
     guid: e0c20488dcd19db42a3951ca0ccbca81
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/EndingCutscene.unity
+    guid: abc5404b6c5c20243b5bd0f16eaf44c4
   m_configObjects: {}

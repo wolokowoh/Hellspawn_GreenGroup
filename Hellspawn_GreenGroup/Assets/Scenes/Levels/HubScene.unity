@@ -2492,17 +2492,17 @@ PrefabInstance:
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[0].message.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[1].message.Array.size
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
@@ -2517,37 +2517,37 @@ PrefabInstance:
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: NPCname
-      value: Ice Golem
+      value: Guard
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[0].message.Array.data[0]
-      value: 'We plan to remodel this hub.  '
+      value: Your father is a friend of mine.
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[1].message.Array.data[0]
-      value: 'We plan to make this place volcanic in a future '
+      value: 'You''ll need the three weapons from the gates '
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[0].message.Array.data[1]
-      value: Until then here is nice background texture.
+      value: 'Its a shame he got caught up in this mess. '
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[1].message.Array.data[1]
-      value: build. We also plan to add attacks as well as
+      value: 'to my left, your right, to break through the '
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[1].message.Array.data[2]
-      value: 'enemies/bosses. This build has the pick ups '
+      value: Warden's magic.
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: messages.Array.data[1].message.Array.data[3]
-      value: 'and the platforming aspect.  We hope you '
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
@@ -2624,6 +2624,16 @@ PrefabInstance:
       propertyPath: messages.Array.data[3].message.Array.data[2]
       value: doesn't do that.
       objectReference: {fileID: 0}
+    - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
+        type: 3}
+      propertyPath: messages.Array.data[0].message.Array.data[2]
+      value: This used to be such a nice place to work too.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868858902739457480, guid: 763a7cbc263936e4bb8d2c36ce46b615,
+        type: 3}
+      propertyPath: messages.Array.data[0].message.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 871368789746096215, guid: 763a7cbc263936e4bb8d2c36ce46b615,
         type: 3}
       propertyPath: m_RootOrder
@@ -2649,6 +2659,16 @@ PrefabInstance:
       propertyPath: m_PlayAutomatically
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5025652748498657090, guid: 763a7cbc263936e4bb8d2c36ce46b615,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ed14df0368fe53543907335c0e3902c6, type: 2}
+    - target: {fileID: 5025652748498657090, guid: 763a7cbc263936e4bb8d2c36ce46b615,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: abd8951d0c78a044eb29e64fcadc2b0e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763a7cbc263936e4bb8d2c36ce46b615, type: 3}
 --- !u!1001 &1685921017
@@ -4388,6 +4408,9 @@ MonoBehaviour:
   updateUI: {fileID: 1502281447}
   MessageToDisplay: Press T to Go to "The Noxious Nether"
   buildIndexofSceneToLoad: 7
+  isIceGate: 0
+  isBloodGate: 0
+  isPoisonGate: 1
 --- !u!1 &6568890978558658991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,6 +4466,9 @@ MonoBehaviour:
   updateUI: {fileID: 1502281447}
   MessageToDisplay: Press T to Go To "Hellfire and Brimstone"
   buildIndexofSceneToLoad: 13
+  isIceGate: 0
+  isBloodGate: 0
+  isPoisonGate: 0
 --- !u!135 &6568890979444275260
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4624,6 +4650,9 @@ MonoBehaviour:
   updateUI: {fileID: 1502281447}
   MessageToDisplay: Press T to Go to "Bloody Hell"
   buildIndexofSceneToLoad: 4
+  isIceGate: 0
+  isBloodGate: 1
+  isPoisonGate: 0
 --- !u!1 &6568890979915055024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4659,6 +4688,9 @@ MonoBehaviour:
   updateUI: {fileID: 1502281447}
   MessageToDisplay: Press T to Go to "The Part that Froze Over"
   buildIndexofSceneToLoad: 10
+  isIceGate: 1
+  isBloodGate: 0
+  isPoisonGate: 0
 --- !u!33 &6568890979915055028
 MeshFilter:
   m_ObjectHideFlags: 0

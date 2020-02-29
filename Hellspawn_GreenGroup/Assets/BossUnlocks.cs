@@ -38,14 +38,17 @@ public class BossUnlocks : MonoBehaviour
         if(unlockCode == "I")
         {
             SaveData.Instance.SetPlayerHasIceWeapon(true);
+            SaveData.Instance.SetHasBeatenIce(true);
         }
         else if(unlockCode == "B")
         {
             SaveData.Instance.SetPlayerHasBloodWeapon(true);
+            SaveData.Instance.SetHasBeatenBlood(true);
         }
         else if (unlockCode == "P") // poison
         {
             SaveData.Instance.SetPlayerHasPoisonWeapon(true);
+            SaveData.Instance.SetHasBeatenPoison(true);
         }
         else // warden
         {

@@ -11,6 +11,7 @@ public class Message
 
 public class DialogueSceneManager : MonoBehaviour
 {
+    public bool isEnd;
     public DialogueCanvasManager canvasManager;
     
     public List<Message> messagesToDisplay;
@@ -85,8 +86,17 @@ public class DialogueSceneManager : MonoBehaviour
     }
     public IEnumerator LoadNextScene()
     {
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(((SceneManager.GetActiveScene().buildIndex) + 1));
+        if (!isEnd)
+        {
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(((SceneManager.GetActiveScene().buildIndex) + 1));
+        }
+        else
+        {
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(3);
+        }
+        
     }
     public IEnumerator PrintWhole(List<string> message)
     {
