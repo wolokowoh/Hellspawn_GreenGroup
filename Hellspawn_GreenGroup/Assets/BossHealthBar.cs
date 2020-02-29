@@ -51,10 +51,13 @@ public class BossHealthBar : MonoBehaviour
                 if (health.currentIceHealth <= 0)
                 {
                     health.currentIceHealth = 0;
+                    updateUI.cutOffWardenBossHealth();
+                    
                 }
                 if (health.currentBloodHealth < 0)
                 {
                     health.currentBloodHealth = 0;
+
                 }
 
                 if (health.currentPoisonHealth < 0)
@@ -70,18 +73,30 @@ public class BossHealthBar : MonoBehaviour
             {
                 health = GetComponent<EnemyHealth>();
                 updateUI.changeIceBossHealthSliderValue(health.currentHealth, health.startingHealth);
+                if(health.currentHealth <= 0)
+                {
+                    updateUI.cutOffIceBossHealth();
+                }
 
             }
             else if (bossCode == "B")
             {
                 health = GetComponent<EnemyHealth>();
                 updateUI.changeBloodBossHealthSliderValue(health.currentHealth, health.startingHealth);
+                if (health.currentHealth <= 0)
+                {
+                    updateUI.cutOffBloodBossHealth();
+                }
 
             }
             else // p for poison
             {
                 health = GetComponent<EnemyHealth>();
                 updateUI.changePoisonBossHealthSliderValue(health.currentHealth, health.startingHealth);
+                if (health.currentHealth <= 0)
+                {
+                    updateUI.cutOffPoisonBossHealth();
+                }
 
             }
         }
