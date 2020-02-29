@@ -1141,7 +1141,7 @@ PrefabInstance:
     - target: {fileID: 5039039317331310813, guid: a58f7d45169c092488ec0673930394ac,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5039039317331310808, guid: a58f7d45169c092488ec0673930394ac,
         type: 3}
@@ -5660,7 +5660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BossFightTime: 0
-  bossCode: 
+  bossCode: I
 --- !u!114 &2064122793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5674,13 +5674,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWarden: 0
-  startingHealth: 100
-  currentHealth: 0
+  startingHealth: 150
+  currentHealth: 150
   sinkSpeed: 2.5
-  BloodDamage: 0
+  BloodDamage: 20
   PoisonDamage: 0
-  ClawsDamage: 0
-  IceDamage: 0
+  ClawsDamage: 10
+  IceDamage: 1
   poisonLength: 0
   startingBloodHealth: 100
   currentBloodHealth: 0
@@ -6078,11 +6078,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8346086484575750544, guid: 69a655180445d7b4ab5488d0dfd089ae,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 5734073561459227551, guid: 69a655180445d7b4ab5488d0dfd089ae,
         type: 3}
       propertyPath: prize
@@ -6103,6 +6098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: positionToSpawn.z
       value: -5.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8346086484575750544, guid: 69a655180445d7b4ab5488d0dfd089ae,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69a655180445d7b4ab5488d0dfd089ae, type: 3}
