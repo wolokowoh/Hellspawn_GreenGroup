@@ -95,13 +95,13 @@ MonoBehaviour:
     type: 3}
   bloodBarCurrentMP: 100
   bloodBarMaxMP: 100
-  bloodCastCost: 2
+  bloodCastCost: 10
   iceBarCurrentMP: 100
   iceBarMaxMP: 100
-  iceCastCost: 5
+  iceCastCost: 10
   poisonBarCurrentMP: 0
   poisonBarMaxMP: 100
-  poisonCastCost: 25
+  poisonCastCost: 20
   enemyInRange: 0
   health: 0
   jumpForce: 90
