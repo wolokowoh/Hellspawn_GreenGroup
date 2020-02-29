@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public int poisonBarCurrentMP;
     public int poisonBarMaxMP;
     public int poisonCastCost;
-    private bool poisonCoroutine = true;
+    private bool poisonCoroutine = false;
     private Rigidbody playerRb;
     GameObject enemy;
     private EnemyHealth enemyHealth;
@@ -80,6 +80,16 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
+        if (isPoisoned)
+        {
+            isPoisoned = false;
+            if (!poisonCoroutine)
+            {
+                StartCoroutine(Poisoned());
+            }
+           
+            
+        }
         if (!death)
         {
             if (health <= 0)
@@ -87,16 +97,11 @@ public class PlayerController : MonoBehaviour
                 death = true;
                 playerAnim.Play("Death");
             }
-            else if(isPoisoned && !poisonCoroutine)
-            {
-                isPoisoned = false;
-                poisonCoroutine = true;
-                StartCoroutine(Poisoned());
 
-            }
         }
         if (!death)
         {
+            
             if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) 
                 || Input.GetKeyDown(KeyCode.W))
                 && isOnGround)
@@ -239,11 +244,11 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator Poisoned()
     {
-        for(int i = 0; i <10; i++)
+        poisonCoroutine = true;
+        for (int i = 0; i <10; i++)
         {
             yield return new WaitForSeconds(1f);
-            health -= PoisonDamage;
-
+            TakeDamage(PoisonDamage);
         }
 
         poisonCoroutine = false;
