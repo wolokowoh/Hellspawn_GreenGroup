@@ -5638,6 +5638,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &2064122796
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064122789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!1 &2082591775
 GameObject:
   m_ObjectHideFlags: 0
@@ -5975,6 +5988,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8346086484575750544, guid: 69a655180445d7b4ab5488d0dfd089ae,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5734073561459227551, guid: 69a655180445d7b4ab5488d0dfd089ae,
         type: 3}
       propertyPath: prize
@@ -5995,11 +6013,6 @@ PrefabInstance:
         type: 3}
       propertyPath: positionToSpawn.z
       value: -5.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8346086484575750544, guid: 69a655180445d7b4ab5488d0dfd089ae,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69a655180445d7b4ab5488d0dfd089ae, type: 3}
