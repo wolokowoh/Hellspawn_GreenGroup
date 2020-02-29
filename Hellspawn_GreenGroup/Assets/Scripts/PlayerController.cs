@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public int poisonBarCurrentMP;
     public int poisonBarMaxMP;
     public int poisonCastCost;
-
+    private bool poisonCoroutine = true;
     private Rigidbody playerRb;
     GameObject enemy;
     private EnemyHealth enemyHealth;
@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
     private TestGameManager TGManager;
     private bool death;
     public Weapon currentWeapon = Weapon.Claws;
+    public int PoisonDamage;
+
+    public bool isPoisoned = false;
 
     bool facingRight = true;
 
@@ -83,6 +86,13 @@ public class PlayerController : MonoBehaviour
             {
                 death = true;
                 playerAnim.Play("Death");
+            }
+            else if(isPoisoned && !poisonCoroutine)
+            {
+                isPoisoned = false;
+                poisonCoroutine = true;
+                StartCoroutine(Poisoned());
+
             }
         }
         if (!death)
@@ -227,7 +237,17 @@ public class PlayerController : MonoBehaviour
         }
         
     }
+    IEnumerator Poisoned()
+    {
+        for(int i = 0; i <10; i++)
+        {
+            yield return new WaitForSeconds(1f);
+            health -= PoisonDamage;
 
+        }
+
+        poisonCoroutine = false;
+    }
     void FixedUpdate()
     {
         if (!death)

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public bool isPoisonous;
     Animator anim;
     GameObject player;
     private float playerHealth;
@@ -147,6 +148,10 @@ public class EnemyController : MonoBehaviour
             {
                 playerController.TakeDamage(AttackDamage);
                 damageAlreadyDone = true;
+                if (isPoisonous)
+                {
+                    playerController.isPoisoned = true;
+                }
 
             }
             else if(damageAlreadyDone)
