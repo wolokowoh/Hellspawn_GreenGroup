@@ -114,6 +114,8 @@ MonoBehaviour:
   speed: 20
   attackDelay: 1
   currentWeapon: 0
+  PoisonDamage: 2
+  isPoisoned: 0
 --- !u!114 &7425208400670534535
 MonoBehaviour:
   m_ObjectHideFlags: 0
