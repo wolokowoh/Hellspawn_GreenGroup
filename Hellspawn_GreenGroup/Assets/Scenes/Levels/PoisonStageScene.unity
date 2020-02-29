@@ -1434,8 +1434,8 @@ MonoBehaviour:
   playerInAttackRange: 0
   playerTouching: 0
   AttackDamage: 5
-  attackAnimationLength: 0.5
-  howLongToWaitBeforeAttackAnimDoesDamage: 1
+  attackAnimationLength: 1
+  howLongToWaitBeforeAttackAnimDoesDamage: 0.3
   speed: 2
   direction: 0
 --- !u!114 &437569212
