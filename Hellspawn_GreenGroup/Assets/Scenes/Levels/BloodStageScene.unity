@@ -1327,6 +1327,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 196320, guid: 96fbdae576d296c46a5a7198cf78f24a, type: 3}
       propertyPath: m_Name
       value: troll_02_01
@@ -2113,6 +2121,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.562117, y: 29.938938, z: 11.18652}
   m_Center: {x: 0.18061954, y: 14.469467, z: 0.75361127}
+--- !u!95 &1022567425
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022567420}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 73ff16e92606e684c9c429608436430a, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8c3cc79a2ba752549a6022f0663a6b43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1065914810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6808777620216393020, guid: 82b2beeb6b59ed649ad093dc78ed8dd9,
