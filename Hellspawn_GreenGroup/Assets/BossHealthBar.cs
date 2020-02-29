@@ -45,7 +45,7 @@ public class BossHealthBar : MonoBehaviour
         if (BossFightTime)
         {
             updateUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<UpdateUI>();
-
+            health = GetComponent<EnemyHealth>();
             if (bossCode == "W")
             {
                 if (health.currentIceHealth <= 0)

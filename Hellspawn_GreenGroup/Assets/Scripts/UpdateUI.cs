@@ -184,11 +184,11 @@ public class UpdateUI : MonoBehaviour
     }
     public void cutOnWardenBossHealth()
     {
-        IceBossHealthBar.SetActive(true);
+        TheWardenHealth.SetActive(true);
     }
     public void cutOffWardenBossHealth()
     {
-        IceBossHealthBar.SetActive(false);
+        TheWardenHealth.SetActive(false);
     }
 
     public void displayPickupMessage(string pickupMessage)
