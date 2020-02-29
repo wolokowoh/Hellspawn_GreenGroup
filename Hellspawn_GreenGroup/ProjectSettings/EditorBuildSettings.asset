@@ -21,11 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/BloodLevelIntroduction.unity
     guid: 9883c3f699e86b24ea2fbec87b650d64
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/BloodBossIntroduction.unity
+    guid: e2982ac054171474b9b2e354c5daf585
+  - enabled: 1
     path: Assets/Scenes/Levels/BloodStageScene.unity
     guid: 34319dcd449df2347b31fdfc40793323
   - enabled: 1
     path: Assets/Scenes/Cutscenes/PoisonLevelIntroduction.unity
     guid: e17f645599c3e574a98aef4ccec29489
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/PoisonBossIntroduction.unity
+    guid: 56667b41daae2044eb56966101b1992c
   - enabled: 1
     path: Assets/Scenes/Levels/PoisonStageScene.unity
     guid: 75eeace22566d0f46afb741b341f8cfd
@@ -33,6 +39,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/IceLevelIntroduction.unity
     guid: 3a83cd8c576de98479da198b3182cc72
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/IceBossIntroduction.unity
+    guid: baa3f3077f38fa34c998f0199841caf9
+  - enabled: 1
     path: Assets/Scenes/Levels/IceStageScene.unity
     guid: 73ad86b515edb274d8024a88cbfd0f6e
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/TheWardenBossIntroduction.unity
+    guid: 94693bc1d3e61354c8e95622666d1065
+  - enabled: 1
+    path: Assets/Scenes/Levels/DungeonScene.unity
+    guid: e0c20488dcd19db42a3951ca0ccbca81
   m_configObjects: {}

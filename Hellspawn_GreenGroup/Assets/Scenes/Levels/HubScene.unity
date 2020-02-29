@@ -1308,7 +1308,7 @@ PrefabInstance:
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
       propertyPath: levelName
-      value: Hellfire and BrimStone
+      value: Cavern of Sorrows
       objectReference: {fileID: 0}
     - target: {fileID: 5290266967005232806, guid: c62db2272ed966845bf0f956003b205c,
         type: 3}
@@ -2343,17 +2343,17 @@ PrefabInstance:
     - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.4811321
       objectReference: {fileID: 0}
     - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.3959781
+      value: 0.21112497
       objectReference: {fileID: 0}
     - target: {fileID: 7494881006593666723, guid: 444e4cd31f11d7b46a9933c8af6cfa2f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.03404236
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 444e4cd31f11d7b46a9933c8af6cfa2f, type: 3}
@@ -4387,7 +4387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   updateUI: {fileID: 1502281447}
   MessageToDisplay: Press T to Go to "The Noxious Nether"
-  buildIndexofSceneToLoad: 6
+  buildIndexofSceneToLoad: 7
 --- !u!1 &6568890978558658991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4441,8 +4441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateUI: {fileID: 1502281447}
-  MessageToDisplay: Press T to Play Credits
-  buildIndexofSceneToLoad: 3
+  MessageToDisplay: Press T to Go To "Hellfire and Brimstone"
+  buildIndexofSceneToLoad: 13
 --- !u!135 &6568890979444275260
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4658,7 +4658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   updateUI: {fileID: 1502281447}
   MessageToDisplay: Press T to Go to "The Part that Froze Over"
-  buildIndexofSceneToLoad: 8
+  buildIndexofSceneToLoad: 10
 --- !u!33 &6568890979915055028
 MeshFilter:
   m_ObjectHideFlags: 0
