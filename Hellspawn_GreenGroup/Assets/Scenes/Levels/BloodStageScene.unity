@@ -1853,7 +1853,7 @@ PrefabInstance:
     - target: {fileID: 7484426334219450794, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_Name
-      value: EnemySkeleton (3)
+      value: BloodSkeleton
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -1919,6 +1919,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 30.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: BloodDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: PoisonDamage
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -2100,6 +2115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc13a1ffd958254418705ec6a76ad260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPoisonous: 0
   playerInRange: 0
   playerInAttackRange: 0
   playerTouching: 0
@@ -3606,7 +3622,7 @@ PrefabInstance:
     - target: {fileID: 7484426334219450794, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_Name
-      value: EnemySkeleton (1)
+      value: BloodSkeleton
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -3666,12 +3682,37 @@ PrefabInstance:
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 30.000015
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 30.000015
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: BloodDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: PoisonDamage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: startingHealth
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585594275486111982, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: currentHealth
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -4244,12 +4285,17 @@ PrefabInstance:
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 30.000015
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 30.000015
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
@@ -4335,6 +4381,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 364293381978006129, guid: 269231e713020cc48806607d3a5f2151,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4994726147133808990, guid: 269231e713020cc48806607d3a5f2151,
         type: 3}
