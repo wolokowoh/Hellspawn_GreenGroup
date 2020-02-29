@@ -1398,13 +1398,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWarden: 0
-  startingHealth: 100
-  currentHealth: 0
+  startingHealth: 150
+  currentHealth: 150
   sinkSpeed: 2.5
-  BloodDamage: 0
+  BloodDamage: 10
   PoisonDamage: 0
-  ClawsDamage: 0
-  IceDamage: 0
+  ClawsDamage: 10
+  IceDamage: 40
   poisonLength: 0
   startingBloodHealth: 100
   currentBloodHealth: 0
@@ -1424,7 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc13a1ffd958254418705ec6a76ad260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPoisonous: 0
+  isPoisonous: 1
   playerInRange: 0
   playerInAttackRange: 0
   playerTouching: 0
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BossFightTime: 0
-  bossCode: 
+  bossCode: P
 --- !u!65 &437569213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6928,12 +6928,12 @@ PrefabInstance:
     - target: {fileID: 5039039317331310813, guid: a58f7d45169c092488ec0673930394ac,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5039039317331310808, guid: a58f7d45169c092488ec0673930394ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 578.5238
+      value: 539.82
       objectReference: {fileID: 0}
     - target: {fileID: 5039039317331310808, guid: a58f7d45169c092488ec0673930394ac,
         type: 3}
