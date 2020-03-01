@@ -9,7 +9,7 @@ public class BossUnlocks : MonoBehaviour
     public GameObject gate;
     // Start is called before the first frame update
 
-    private void Start()
+    private void Awake()
     {
         if(unlockCode == "W")
         {
